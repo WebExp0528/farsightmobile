@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79E77BE0269CD73000247D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BDF269CD73000247D00 /* AppDelegate.swift */; };
+		79E77BE2269CD73000247D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BE1269CD73000247D00 /* SceneDelegate.swift */; };
+		79E77BE4269CD73000247D00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BE3269CD73000247D00 /* ViewController.swift */; };
+		79E77BE7269CD73000247D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E77BE5269CD73000247D00 /* Main.storyboard */; };
+		79E77BE9269CD73000247D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E77BE8269CD73000247D00 /* Assets.xcassets */; };
+		79E77BEC269CD73000247D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E77BEA269CD73000247D00 /* LaunchScreen.storyboard */; };
+		79E77BF7269CD73100247D00 /* Farsight_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BF6269CD73100247D00 /* Farsight_AppTests.swift */; };
+		79E77C02269CD73100247D00 /* Farsight_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77C01269CD73100247D00 /* Farsight_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79E77BF3269CD73100247D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E77BD4269CD73000247D00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E77BDB269CD73000247D00;
+			remoteInfo = "Farsight App";
+		};
+		79E77BFE269CD73100247D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E77BD4269CD73000247D00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E77BDB269CD73000247D00;
+			remoteInfo = "Farsight App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79E77BDC269CD73000247D00 /* Farsight App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farsight App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E77BDF269CD73000247D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79E77BE1269CD73000247D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		79E77BE3269CD73000247D00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79E77BE6269CD73000247D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79E77BE8269CD73000247D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79E77BEB269CD73000247D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79E77BED269CD73000247D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E77BF2269CD73100247D00 /* Farsight AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Farsight AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E77BF6269CD73100247D00 /* Farsight_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farsight_AppTests.swift; sourceTree = "<group>"; };
+		79E77BF8269CD73100247D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E77BFD269CD73100247D00 /* Farsight AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Farsight AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E77C01269CD73100247D00 /* Farsight_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farsight_AppUITests.swift; sourceTree = "<group>"; };
+		79E77C03269CD73100247D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E77BD9269CD73000247D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E77BEF269CD73100247D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E77BFA269CD73100247D00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79E77BD3269CD73000247D00 = {
+			isa = PBXGroup;
+			children = (
+				79E77BDE269CD73000247D00 /* Farsight App */,
+				79E77BF5269CD73100247D00 /* Farsight AppTests */,
+				79E77C00269CD73100247D00 /* Farsight AppUITests */,
+				79E77BDD269CD73000247D00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79E77BDD269CD73000247D00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E77BDC269CD73000247D00 /* Farsight App.app */,
+				79E77BF2269CD73100247D00 /* Farsight AppTests.xctest */,
+				79E77BFD269CD73100247D00 /* Farsight AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E77BDE269CD73000247D00 /* Farsight App */ = {
+			isa = PBXGroup;
+			children = (
+				79E77BDF269CD73000247D00 /* AppDelegate.swift */,
+				79E77BE1269CD73000247D00 /* SceneDelegate.swift */,
+				79E77BE3269CD73000247D00 /* ViewController.swift */,
+				79E77BE5269CD73000247D00 /* Main.storyboard */,
+				79E77BE8269CD73000247D00 /* Assets.xcassets */,
+				79E77BEA269CD73000247D00 /* LaunchScreen.storyboard */,
+				79E77BED269CD73000247D00 /* Info.plist */,
+			);
+			path = "Farsight App";
+			sourceTree = "<group>";
+		};
+		79E77BF5269CD73100247D00 /* Farsight AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				79E77BF6269CD73100247D00 /* Farsight_AppTests.swift */,
+				79E77BF8269CD73100247D00 /* Info.plist */,
+			);
+			path = "Farsight AppTests";
+			sourceTree = "<group>";
+		};
+		79E77C00269CD73100247D00 /* Farsight AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79E77C01269CD73100247D00 /* Farsight_AppUITests.swift */,
+				79E77C03269CD73100247D00 /* Info.plist */,
+			);
+			path = "Farsight AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E77BDB269CD73000247D00 /* Farsight App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E77C06269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight App" */;
+			buildPhases = (
+				79E77BD8269CD73000247D00 /* Sources */,
+				79E77BD9269CD73000247D00 /* Frameworks */,
+				79E77BDA269CD73000247D00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Farsight App";
+			productName = "Farsight App";
+			productReference = 79E77BDC269CD73000247D00 /* Farsight App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79E77BF1269CD73100247D00 /* Farsight AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E77C09269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppTests" */;
+			buildPhases = (
+				79E77BEE269CD73100247D00 /* Sources */,
+				79E77BEF269CD73100247D00 /* Frameworks */,
+				79E77BF0269CD73100247D00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E77BF4269CD73100247D00 /* PBXTargetDependency */,
+			);
+			name = "Farsight AppTests";
+			productName = "Farsight AppTests";
+			productReference = 79E77BF2269CD73100247D00 /* Farsight AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79E77BFC269CD73100247D00 /* Farsight AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E77C0C269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppUITests" */;
+			buildPhases = (
+				79E77BF9269CD73100247D00 /* Sources */,
+				79E77BFA269CD73100247D00 /* Frameworks */,
+				79E77BFB269CD73100247D00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E77BFF269CD73100247D00 /* PBXTargetDependency */,
+			);
+			name = "Farsight AppUITests";
+			productName = "Farsight AppUITests";
+			productReference = 79E77BFD269CD73100247D00 /* Farsight AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E77BD4269CD73000247D00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					79E77BDB269CD73000247D00 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					79E77BF1269CD73100247D00 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 79E77BDB269CD73000247D00;
+					};
+					79E77BFC269CD73100247D00 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 79E77BDB269CD73000247D00;
+					};
+				};
+			};
+			buildConfigurationList = 79E77BD7269CD73000247D00 /* Build configuration list for PBXProject "Farsight App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79E77BD3269CD73000247D00;
+			productRefGroup = 79E77BDD269CD73000247D00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E77BDB269CD73000247D00 /* Farsight App */,
+				79E77BF1269CD73100247D00 /* Farsight AppTests */,
+				79E77BFC269CD73100247D00 /* Farsight AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79E77BDA269CD73000247D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E77BEC269CD73000247D00 /* LaunchScreen.storyboard in Resources */,
+				79E77BE9269CD73000247D00 /* Assets.xcassets in Resources */,
+				79E77BE7269CD73000247D00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E77BF0269CD73100247D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E77BFB269CD73100247D00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E77BD8269CD73000247D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E77BE4269CD73000247D00 /* ViewController.swift in Sources */,
+				79E77BE0269CD73000247D00 /* AppDelegate.swift in Sources */,
+				79E77BE2269CD73000247D00 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E77BEE269CD73100247D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E77BF7269CD73100247D00 /* Farsight_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E77BF9269CD73100247D00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E77C02269CD73100247D00 /* Farsight_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E77BF4269CD73100247D00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E77BDB269CD73000247D00 /* Farsight App */;
+			targetProxy = 79E77BF3269CD73100247D00 /* PBXContainerItemProxy */;
+		};
+		79E77BFF269CD73100247D00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E77BDB269CD73000247D00 /* Farsight App */;
+			targetProxy = 79E77BFE269CD73100247D00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79E77BE5269CD73000247D00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E77BE6269CD73000247D00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79E77BEA269CD73000247D00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E77BEB269CD73000247D00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79E77C04269CD73100247D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79E77C05269CD73100247D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79E77C07269CD73100247D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Farsight App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NorthSight.Farsight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79E77C08269CD73100247D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Farsight App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NorthSight.Farsight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79E77C0A269CD73100247D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Farsight AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "NorthSight.Farsight-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farsight App.app/Farsight App";
+			};
+			name = Debug;
+		};
+		79E77C0B269CD73100247D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Farsight AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "NorthSight.Farsight-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farsight App.app/Farsight App";
+			};
+			name = Release;
+		};
+		79E77C0D269CD73100247D00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Farsight AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "NorthSight.Farsight-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Farsight App";
+			};
+			name = Debug;
+		};
+		79E77C0E269CD73100247D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Farsight AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "NorthSight.Farsight-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Farsight App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E77BD7269CD73000247D00 /* Build configuration list for PBXProject "Farsight App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E77C04269CD73100247D00 /* Debug */,
+				79E77C05269CD73100247D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E77C06269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E77C07269CD73100247D00 /* Debug */,
+				79E77C08269CD73100247D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E77C09269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E77C0A269CD73100247D00 /* Debug */,
+				79E77C0B269CD73100247D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E77C0C269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E77C0D269CD73100247D00 /* Debug */,
+				79E77C0E269CD73100247D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79E77BD4269CD73000247D00 /* Project object */;
+}
