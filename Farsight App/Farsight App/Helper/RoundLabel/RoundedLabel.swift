@@ -1,9 +1,8 @@
 //
 //  RoundLabel.swift
-//  DocCall
+//  Farsight App
 //
-//  Created by Apple on 30/04/2019.
-//  Copyright © 2019 Hamza. All rights reserved.
+//  Created by WebDEV on 7/15/21.
 //
 
 import UIKit

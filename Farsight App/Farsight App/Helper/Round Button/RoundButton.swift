@@ -1,9 +1,8 @@
 //
 //  RoundButton.swift
-//  kharchi
+//  Farsight App
 //
-//  Created by Apple on 28/08/2018.
-//  Copyright © 2018 Apple. All rights reserved.
+//  Created by WebDEV on 7/15/21.
 //
 
 import UIKit

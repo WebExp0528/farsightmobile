@@ -1,9 +1,8 @@
 //
 //  DesignableView.swift
-//  SR7app
+//  Farsight App
 //
-//  Created by Apple on 24/12/2018.
-//  Copyright © 2018 Hamza. All rights reserved.
+//  Created by WebDEV on 7/15/21.
 //
 
 import UIKit

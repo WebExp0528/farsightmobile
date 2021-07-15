@@ -9,7 +9,6 @@ import UIKit
 import SVProgressHUD
 class JobListCell: UITableViewCell {
     
-    @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var workOrderedLbl: UILabel!
     @IBOutlet weak var addressLbl: UILabel!
     @IBOutlet weak var cityLbl: UILabel!
@@ -30,6 +29,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     private var mJobsList = [DTOJobList]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         self.tableView.estimatedRowHeight = 400
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.tableFooterView = UIView()
@@ -50,13 +51,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "jobListCell") as! JobListCell
+        let mJob = self.mJobsList[indexPath.row];
         
-        
-        cell.descriptionLbl.text = ""
-        cell.wonLbl.text = "WorkOrder#\(self.mJobsList[indexPath.row].won)"
-        cell.addressLbl.text =  self.mJobsList[indexPath.row].address_street
-        cell.cityLbl.text =  self.mJobsList[indexPath.row].address_city + self.mJobsList[indexPath.row].address_state
-        cell.workOrderedLbl.text = self.mJobsList[indexPath.row].work_ordered
+        cell.wonLbl.text = "WorkOrder#\(mJob.won)"
+        cell.addressLbl.text =  mJob.address_street + mJob.address_city + mJob.address_state
+        cell.cityLbl.text = mJob.description
+        cell.workOrderedLbl.text = mJob.work_ordered
         
         let date = self.mJobsList[indexPath.row].due_date.toDate(withFormat: "MMM d, yyyy")
         if let date = date {
@@ -66,6 +66,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.PastDue.text = ""
         cell.dueDateLbl.text = ""
         }
+        
+        cell.img.roundedImage()
+        
         DispatchQueue.global(qos: .background).async {
             do
                 {

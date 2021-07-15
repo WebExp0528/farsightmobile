@@ -1,9 +1,8 @@
 //
 //  UIImageView.swift
-//  DocCall
+//  Farsight App
 //
-//  Created by Apple on 23/05/2019.
-//  Copyright © 2019 Hamza. All rights reserved.
+//  Created by WebDEV on 7/15/21.
 //
 
 import UIKit
@@ -11,7 +10,7 @@ import UIKit
 extension UIImageView {
     
     func roundedImage() {
-        self.layer.cornerRadius = self.frame.size.width / 2
+        self.layer.cornerRadius = self.frame.size.height / 2
         self.clipsToBounds = true
     }
     func maskWithColor(color: UIColor) {
