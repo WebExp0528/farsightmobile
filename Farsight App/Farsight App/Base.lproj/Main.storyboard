@@ -137,9 +137,14 @@
                                                                                 <constraint firstAttribute="height" constant="20" id="r2D-QW-6nE"/>
                                                                                 <constraint firstAttribute="width" constant="95" id="sMR-mU-Z6F"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
                                                                             <color key="textColor" red="0.0019021964400000001" green="0.41119197010000003" blue="0.85185116530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="8"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kG8-wT-wRc" customClass="RoundedLabel" customModule="Farsight_App" customModuleProvider="target">
                                                                             <rect key="frame" x="105" y="0.0" width="60" height="20"/>
@@ -148,9 +153,14 @@
                                                                                 <constraint firstAttribute="width" constant="60" id="PGl-Wr-99V"/>
                                                                                 <constraint firstAttribute="height" constant="20" id="kOd-mB-vuh"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
                                                                             <color key="textColor" red="0.81974560019999998" green="0.33236426120000001" blue="0.3849479556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="8"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
@@ -271,10 +281,10 @@
     </scenes>
     <designables>
         <designable name="4OU-3U-Aut">
-            <size key="intrinsicContentSize" width="26.5" height="12"/>
+            <size key="intrinsicContentSize" width="35" height="14"/>
         </designable>
         <designable name="kG8-wT-wRc">
-            <size key="intrinsicContentSize" width="26.5" height="12"/>
+            <size key="intrinsicContentSize" width="35" height="14"/>
         </designable>
     </designables>
     <resources>
