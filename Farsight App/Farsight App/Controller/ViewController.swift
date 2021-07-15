@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let date = self.mJobsList[indexPath.row].due_date.toDate(withFormat: "MMM d, yyyy")
         if let date = date {
         cell.PastDue.text = self.statusFromDate(date: date)
-        cell.dueDateLbl.text = "\(date)"
+        cell.dueDateLbl.text = self.mJobsList[indexPath.row].due_date
         } else {
         cell.PastDue.text = ""
         cell.dueDateLbl.text = ""
