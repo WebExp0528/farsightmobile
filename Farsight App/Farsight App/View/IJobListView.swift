@@ -10,7 +10,7 @@ import Foundation
 protocol IJobListView {
     func showLoader()
     func hideLoader()
-    func showJobsList(dtoJobs: DTOJobList)
+    func showJobsList(dtoJobs: [DTOJobList]?)
     func showErrorMessage(msg:String)
 
 }

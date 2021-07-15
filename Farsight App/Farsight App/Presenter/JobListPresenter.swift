@@ -19,11 +19,11 @@ class JobListPresenter: NSObject {
     }
     
 
-    func getAllGroups(userId: String, pageId: String) {
+    func getJobsList(userId: String) {
             
              mView.showLoader()
         
-            self.mJobService.getJobs(byUserId: userId, pageId: pageId) { (dtoJobs, error) in
+            self.mJobService.getJobs(byUserId: userId) { (dtoJobs, error) in
          
                 if error != nil {
                                          
@@ -37,7 +37,7 @@ class JobListPresenter: NSObject {
         
                        
                 self.mView.hideLoader()
-                self.mView.showJobsList(dtoJobs: dtoJobs)
+                self.mView.showJobsList(dtoJobs: dtoJobs ?? nil)
                   
      }
         

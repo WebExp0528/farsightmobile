@@ -20,7 +20,20 @@ struct Config {
     
     //MARK: - Read only properties
     
-    var jobListApi:String {
+    var user_Id: String {
+        get {
+            return Config.userId
+        }
+    }
+    
+    var app_Id: String {
+        get {
+            return Config.appId
+        }
+    }
+
+
+    var jobListURL:String {
         get {
             if let value = mergeWithParent(self.jobList) {
                 return value
