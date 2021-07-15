@@ -7,8 +7,8 @@ target 'Farsight App' do
 
   # Pods for Farsight App
   pod 'SwiftyJSON'
-  pod 'UICircularProgressRing' # Circular progress bar to show download/upload progress
   pod 'Alamofire', '~> 5.2'
+  pod 'SVProgressHUD'
 
   target 'Farsight AppTests' do
     inherit! :search_paths
