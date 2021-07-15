@@ -16,6 +16,8 @@
 		1800FA30269FF5020075922C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA2B269FF5010075922C /* UIImageView.swift */; };
 		1800FA31269FF5020075922C /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA2D269FF5020075922C /* RoundedLabel.swift */; };
 		1800FA39269FF55B0075922C /* IJobListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA38269FF55B0075922C /* IJobListService.swift */; };
+		49D2EE835E0AF50985B87C74 /* Pods_Farsight_App_Farsight_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051F280E568B17E60C3661CD /* Pods_Farsight_App_Farsight_AppUITests.framework */; };
+		6E66BD216AC06F769F105DAB /* Pods_Farsight_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C729C3ABD156B611F231302 /* Pods_Farsight_App.framework */; };
 		79E77BE0269CD73000247D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BDF269CD73000247D00 /* AppDelegate.swift */; };
 		79E77BE2269CD73000247D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BE1269CD73000247D00 /* SceneDelegate.swift */; };
 		79E77BE4269CD73000247D00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BE3269CD73000247D00 /* ViewController.swift */; };
@@ -24,6 +26,7 @@
 		79E77BEC269CD73000247D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E77BEA269CD73000247D00 /* LaunchScreen.storyboard */; };
 		79E77BF7269CD73100247D00 /* Farsight_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BF6269CD73100247D00 /* Farsight_AppTests.swift */; };
 		79E77C02269CD73100247D00 /* Farsight_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77C01269CD73100247D00 /* Farsight_AppUITests.swift */; };
+		DC8A111B4E8C21C26824FBA3 /* Pods_Farsight_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410A73957D94B1D90A5AC141 /* Pods_Farsight_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		051F280E568B17E60C3661CD /* Pods_Farsight_App_Farsight_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farsight_App_Farsight_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1127D3EA1242079E0D0CAA52 /* Pods-Farsight App-Farsight AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App-Farsight AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1418D97F84B18810EC1CD0B7 /* Pods-Farsight AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight AppTests.release.xcconfig"; path = "Target Support Files/Pods-Farsight AppTests/Pods-Farsight AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		1800FA06269FF3010075922C /* JobService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobService.swift; sourceTree = "<group>"; };
 		1800FA10269FF3460075922C /* DTOJobList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOJobList.swift; sourceTree = "<group>"; };
 		1800FA19269FF4110075922C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -53,6 +59,11 @@
 		1800FA2B269FF5010075922C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		1800FA2D269FF5020075922C /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
 		1800FA38269FF55B0075922C /* IJobListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IJobListService.swift; sourceTree = "<group>"; };
+		25B8F45C3EDCC4E05E2B4FE7 /* Pods-Farsight App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App.release.xcconfig"; path = "Target Support Files/Pods-Farsight App/Pods-Farsight App.release.xcconfig"; sourceTree = "<group>"; };
+		410A73957D94B1D90A5AC141 /* Pods_Farsight_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farsight_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AF91A525D27D52D6C097D7D /* Pods-Farsight App-Farsight AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App-Farsight AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C729C3ABD156B611F231302 /* Pods_Farsight_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farsight_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7397F56BF66F49F6735B5890 /* Pods-Farsight App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App.debug.xcconfig"; path = "Target Support Files/Pods-Farsight App/Pods-Farsight App.debug.xcconfig"; sourceTree = "<group>"; };
 		79E77BDC269CD73000247D00 /* Farsight App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farsight App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E77BDF269CD73000247D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E77BE1269CD73000247D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +78,7 @@
 		79E77BFD269CD73100247D00 /* Farsight AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Farsight AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E77C01269CD73100247D00 /* Farsight_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farsight_AppUITests.swift; sourceTree = "<group>"; };
 		79E77C03269CD73100247D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16BD341892751A572B76C6E /* Pods-Farsight AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Farsight AppTests/Pods-Farsight AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E66BD216AC06F769F105DAB /* Pods_Farsight_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8A111B4E8C21C26824FBA3 /* Pods_Farsight_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D2EE835E0AF50985B87C74 /* Pods_Farsight_App_Farsight_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +191,30 @@
 			path = RoundLabel;
 			sourceTree = "<group>";
 		};
+		2DAE952D1A0F55786FAF3E08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C729C3ABD156B611F231302 /* Pods_Farsight_App.framework */,
+				051F280E568B17E60C3661CD /* Pods_Farsight_App_Farsight_AppUITests.framework */,
+				410A73957D94B1D90A5AC141 /* Pods_Farsight_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E02BCDC0E076010FF3EC8DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7397F56BF66F49F6735B5890 /* Pods-Farsight App.debug.xcconfig */,
+				25B8F45C3EDCC4E05E2B4FE7 /* Pods-Farsight App.release.xcconfig */,
+				5AF91A525D27D52D6C097D7D /* Pods-Farsight App-Farsight AppUITests.debug.xcconfig */,
+				1127D3EA1242079E0D0CAA52 /* Pods-Farsight App-Farsight AppUITests.release.xcconfig */,
+				B16BD341892751A572B76C6E /* Pods-Farsight AppTests.debug.xcconfig */,
+				1418D97F84B18810EC1CD0B7 /* Pods-Farsight AppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		79E77BD3269CD73000247D00 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +222,8 @@
 				79E77BF5269CD73100247D00 /* Farsight AppTests */,
 				79E77C00269CD73100247D00 /* Farsight AppUITests */,
 				79E77BDD269CD73000247D00 /* Products */,
+				3E02BCDC0E076010FF3EC8DC /* Pods */,
+				2DAE952D1A0F55786FAF3E08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E77C06269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight App" */;
 			buildPhases = (
+				CD30B09665ED0C41C444A69E /* [CP] Check Pods Manifest.lock */,
 				79E77BD8269CD73000247D00 /* Sources */,
 				79E77BD9269CD73000247D00 /* Frameworks */,
 				79E77BDA269CD73000247D00 /* Resources */,
+				88817E92DDB9AC471FD9FC02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E77C09269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppTests" */;
 			buildPhases = (
+				800B2CEAACCB6E3B1ECEFBAD /* [CP] Check Pods Manifest.lock */,
 				79E77BEE269CD73100247D00 /* Sources */,
 				79E77BEF269CD73100247D00 /* Frameworks */,
 				79E77BF0269CD73100247D00 /* Resources */,
@@ -277,9 +321,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E77C0C269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppUITests" */;
 			buildPhases = (
+				7C6D86795B5DC8A68A824782 /* [CP] Check Pods Manifest.lock */,
 				79E77BF9269CD73100247D00 /* Sources */,
 				79E77BFA269CD73100247D00 /* Frameworks */,
 				79E77BFB269CD73100247D00 /* Resources */,
+				3B34D5AC0C21EF134A2D9AC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +405,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B34D5AC0C21EF134A2D9AC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C6D86795B5DC8A68A824782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Farsight App-Farsight AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		800B2CEAACCB6E3B1ECEFBAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Farsight AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88817E92DDB9AC471FD9FC02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farsight App/Pods-Farsight App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Farsight App/Pods-Farsight App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Farsight App/Pods-Farsight App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD30B09665ED0C41C444A69E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Farsight App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79E77BD8269CD73000247D00 /* Sources */ = {
@@ -549,16 +698,19 @@
 		};
 		79E77C07269CD73100247D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7397F56BF66F49F6735B5890 /* Pods-Farsight App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UCUHA433NT;
 				INFOPLIST_FILE = "Farsight App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NorthSight.Farsight;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NorthSight.Farsight-hamza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,16 +719,19 @@
 		};
 		79E77C08269CD73100247D00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25B8F45C3EDCC4E05E2B4FE7 /* Pods-Farsight App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UCUHA433NT;
 				INFOPLIST_FILE = "Farsight App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NorthSight.Farsight;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NorthSight.Farsight-hamza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -585,6 +740,7 @@
 		};
 		79E77C0A269CD73100247D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B16BD341892751A572B76C6E /* Pods-Farsight AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -606,6 +762,7 @@
 		};
 		79E77C0B269CD73100247D00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1418D97F84B18810EC1CD0B7 /* Pods-Farsight AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -627,6 +784,7 @@
 		};
 		79E77C0D269CD73100247D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF91A525D27D52D6C097D7D /* Pods-Farsight App-Farsight AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -646,6 +804,7 @@
 		};
 		79E77C0E269CD73100247D00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1127D3EA1242079E0D0CAA52 /* Pods-Farsight App-Farsight AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
