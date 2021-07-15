@@ -11,8 +11,9 @@ struct Config {
     
     //MARK: - Constants
    
-    static let appKey = "8a2913ae-7fd5-4fea-a286-89d45ca4be2c"
-    let ParentURL = "http://"
+    static let appId = "10a74c1f-1894-49cd-90cc-1f90c3996bf6"
+    static let userId = "00903200-EQ00-QUY1-UAA3-1EQUY1EQ1EQU"
+    let ParentURL = "http://dev.northsight.io"
 
     //MARK: - Singleton
     static var shared = Config()
@@ -31,7 +32,7 @@ struct Config {
 
     
     //MARK: - Private
-    private let jobList = "/VerifyLogin"
+    private let jobList = "/api/work_order/list"
    
     private func mergeWithParent(_ key: String) -> String? {
         return ParentURL + key
