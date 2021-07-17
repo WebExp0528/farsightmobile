@@ -89,6 +89,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let control = JobDetailViewController(nibName: "JobDetailViewController", bundle: nil)
+        //  control.htmlForm = form;
+        self.navigationController?.pushViewController(control, animated: true)
+    }
+    
     func showLoader() {
         SVProgressHUD.setDefaultStyle(.custom)
         SVProgressHUD.setDefaultMaskType(.custom)
