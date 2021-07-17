@@ -22,6 +22,8 @@ class JobListCell: UITableViewCell {
 }
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, IJobListView {
+  
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -90,10 +92,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return UITableView.automaticDimension
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let won = self.mJobsList[indexPath.row].won
         
-        let control = JobDetailViewController(nibName: "JobDetailViewController", bundle: nil)
-        //  control.htmlForm = form;
-        self.navigationController?.pushViewController(control, animated: true)
+        let controller = JobDetailViewController(nibName: "JobDetailViewController", bundle: nil)
+        controller.won = won
+        
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func showLoader() {
@@ -132,10 +136,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.tableView.reloadData()
         }
     }
+    func showJobsDetail(dtoDetail: DTOJobDetail?) {
+        
+    }
     
     func showErrorMessage(msg: String) {
         
     }
+    func showJobsPhotos(dtoPhotos: [DTOPhotos]?) {
+        
+    }
+    
     
     
 }

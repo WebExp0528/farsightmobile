@@ -43,5 +43,56 @@ class JobListPresenter: NSObject {
         
     }
 
+    func getJobsDetail(userId: String, won: String) {
+            
+         if won.isEmpty {
+            return
+          }
+             mView.showLoader()
+        
+        self.mJobService.getJobDetail(byUserId: userId, won: won) { (dtoDetails, error) in
+            
+                   if error != nil {
+                                            
+                       self.mView.hideLoader()
+                                             
+                       self.mView.showErrorMessage(msg: "Invalid Data!!!")
+                                             
+                       return
+                                    
+                   }
+           
+                          
+                   self.mView.hideLoader()
+                   self.mView.showJobsDetail(dtoDetail: dtoDetails)
+        }
+        
+    }
     
+    func getPhotos(userId: String, won: String) {
+            
+         if won.isEmpty {
+            return
+          }
+             mView.showLoader()
+        
+        self.mJobService.getPhotos(byUserId: userId, won: won) { (dtoPhotos, error) in
+            
+                   if error != nil {
+                                            
+                       self.mView.hideLoader()
+                                             
+                       self.mView.showErrorMessage(msg: "Invalid Data!!!")
+                                             
+                       return
+                                    
+                   }
+           
+                          
+                   self.mView.hideLoader()
+                   self.mView.showJobsPhotos(dtoPhotos: dtoPhotos)
+        }
+        
+    }
+
 }
