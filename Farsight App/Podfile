@@ -6,8 +6,10 @@ target 'Farsight App' do
   use_frameworks!
 
   # Pods for Farsight App
-  pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'Alamofire', '~> 5.2'
+  pod 'SVProgressHUD'
+
   target 'Farsight AppTests' do
     inherit! :search_paths
     # Pods for testing
