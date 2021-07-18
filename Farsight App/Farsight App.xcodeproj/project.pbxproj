@@ -16,6 +16,8 @@
 		1800FA30269FF5020075922C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA2B269FF5010075922C /* UIImageView.swift */; };
 		1800FA31269FF5020075922C /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA2D269FF5020075922C /* RoundedLabel.swift */; };
 		1800FA39269FF55B0075922C /* IJobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA38269FF55B0075922C /* IJobListView.swift */; };
+		186B5F7F26A41E89006AB8DC /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B5F7D26A41E89006AB8DC /* GalleryCell.swift */; };
+		186B5F8026A41E89006AB8DC /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186B5F7E26A41E89006AB8DC /* GalleryCell.xib */; };
 		187F691A26A2DC1A005FFE52 /* UploadPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */; };
 		187F691B26A2DC1A005FFE52 /* UploadPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */; };
 		18BCEDE226A0CBC000AA2637 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCEDE126A0CBC000AA2637 /* Extension.swift */; };
@@ -66,6 +68,8 @@
 		1800FA2B269FF5010075922C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		1800FA2D269FF5020075922C /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
 		1800FA38269FF55B0075922C /* IJobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IJobListView.swift; sourceTree = "<group>"; };
+		186B5F7D26A41E89006AB8DC /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		186B5F7E26A41E89006AB8DC /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
 		187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoCell.swift; sourceTree = "<group>"; };
 		187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadPhotoCell.xib; sourceTree = "<group>"; };
 		18BCEDE126A0CBC000AA2637 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 			children = (
 				187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */,
 				187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */,
+				186B5F7D26A41E89006AB8DC /* GalleryCell.swift */,
+				186B5F7E26A41E89006AB8DC /* GalleryCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -432,6 +438,7 @@
 				18EAFB1226A2D2B100314610 /* JobDetailViewController.xib in Resources */,
 				79E77BE9269CD73000247D00 /* Assets.xcassets in Resources */,
 				79E77BE7269CD73000247D00 /* Main.storyboard in Resources */,
+				186B5F8026A41E89006AB8DC /* GalleryCell.xib in Resources */,
 				187F691B26A2DC1A005FFE52 /* UploadPhotoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +579,7 @@
 				1800FA39269FF55B0075922C /* IJobListView.swift in Sources */,
 				1800FA30269FF5020075922C /* UIImageView.swift in Sources */,
 				18EAFB1126A2D2B100314610 /* JobDetailViewController.swift in Sources */,
+				186B5F7F26A41E89006AB8DC /* GalleryCell.swift in Sources */,
 				18BCEDE226A0CBC000AA2637 /* Extension.swift in Sources */,
 				187F691A26A2DC1A005FFE52 /* UploadPhotoCell.swift in Sources */,
 				1800FA07269FF3010075922C /* JobService.swift in Sources */,

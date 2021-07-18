@@ -19,20 +19,33 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
     @IBOutlet weak var addressLbl: UILabel!
     @IBOutlet weak var cityLbl: UILabel!
     var jobDetail: DTOJobDetail?
+    var dtoPhotos: [DTOPhotos] = []
     var uploaded = 0
     var won:String = ""
+    var viewUploadedPhotos = false
+    
     private var mJobListPresenter: JobListPresenter!
     var config = YPImagePickerConfiguration()
-    // [Edit configuration here ...]
-    // Build a picker with your configuration
-    
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let uploadPhotoCell = tableView.dequeueReusableCell(withIdentifier: "UploadPhotoCell") as! UploadPhotoCell
-        uploadPhotoCell.viewUploadButton.setTitle("View \(self.uploaded) Uploaded Images..", for: .normal)
+        uploadPhotoCell.setup(canViewUploaded: self.viewUploadedPhotos, photos: self.dtoPhotos)
+        uploadPhotoCell.viewUploadedPhotos = {
+            if (self.viewUploadedPhotos) {
+                self.viewUploadedPhotos = false
+
+            } else {
+                self.viewUploadedPhotos = true
+                
+            }
+            self.tableView.reloadData()
+        }
         uploadPhotoCell.uploadHandler = {
             let picker = YPImagePicker(configuration: self.config)
             picker.didFinishPicking { [unowned picker] items, cancelled in
@@ -119,7 +132,7 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
         self.tableView.isScrollEnabled = false
         self.tableView.register(UINib(nibName: "UploadPhotoCell", bundle: nil), forCellReuseIdentifier: "UploadPhotoCell")
         self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 45.0
+        self.tableView.estimatedRowHeight = 500
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -162,6 +175,7 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
          
         if let photos = dtoPhotos {
             self.uploaded = photos.count
+            self.dtoPhotos = photos
         }
         self.tableView.reloadData()
     }

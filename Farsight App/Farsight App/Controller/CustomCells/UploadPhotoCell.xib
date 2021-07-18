@@ -11,15 +11,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="132" id="KGk-i7-Jjw" customClass="UploadPhotoCell" customModule="Farsight_App" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="370" height="132"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="436" id="KGk-i7-Jjw" customClass="UploadPhotoCell" customModule="Farsight_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="436"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="370" height="132"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="436"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-aC-6qq" customClass="DesignableView" customModule="Farsight_App" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="370" height="132"/>
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="430"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZq-yd-Hmm">
                                 <rect key="frame" x="0.0" y="0.0" width="370" height="40"/>
@@ -49,14 +49,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8t5-1J-LBf">
-                                <rect key="frame" x="0.0" y="91" width="370" height="1"/>
+                                <rect key="frame" x="0.0" y="389" width="370" height="1"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="lnQ-Io-2fY"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ig-tK-sCI">
-                                <rect key="frame" x="0.0" y="92" width="370" height="40"/>
+                                <rect key="frame" x="0.0" y="390" width="370" height="40"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eg1-55-7YD" customClass="DesignableView" customModule="Farsight_App" customModuleProvider="target">
                                         <rect key="frame" x="15" y="5" width="340" height="30"/>
@@ -107,26 +107,47 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Uz-ck-vXK">
-                                <rect key="frame" x="118.5" y="56" width="133" height="26"/>
+                                <rect key="frame" x="118.5" y="53" width="133" height="26"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
                                 <state key="normal" title="View 0 Uploaded Images">
                                     <color key="titleColor" red="0.085067011420000005" green="0.55016303060000005" blue="0.72934323550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="view:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VXb-3K-Yjk"/>
+                                </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Zns-TT-TzV">
+                                <rect key="frame" x="4" y="80" width="362" height="301"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="kP2-Rq-cq1">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="-1" id="94e-7B-cDH"/>
+                                    <outlet property="delegate" destination="-1" id="rUg-Js-6oC"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8t5-1J-LBf" firstAttribute="top" secondItem="Zns-TT-TzV" secondAttribute="bottom" constant="8" symbolic="YES" id="1sp-Rz-5Dk"/>
+                            <constraint firstItem="Zns-TT-TzV" firstAttribute="leading" secondItem="1fZ-aC-6qq" secondAttribute="leading" constant="4" id="3EX-Fi-dKk"/>
                             <constraint firstItem="2Uz-ck-vXK" firstAttribute="centerX" secondItem="1fZ-aC-6qq" secondAttribute="centerX" id="6HG-eo-c4S"/>
                             <constraint firstAttribute="bottom" secondItem="8t5-1J-LBf" secondAttribute="bottom" constant="40" id="Ftt-YM-WwZ"/>
                             <constraint firstItem="8t5-1J-LBf" firstAttribute="leading" secondItem="1fZ-aC-6qq" secondAttribute="leading" id="LDc-Yj-VSE"/>
                             <constraint firstAttribute="trailing" secondItem="0ig-tK-sCI" secondAttribute="trailing" id="Pb5-5Y-Pg2"/>
                             <constraint firstAttribute="trailing" secondItem="eZq-yd-Hmm" secondAttribute="trailing" id="VtT-y7-8Rh"/>
+                            <constraint firstItem="Zns-TT-TzV" firstAttribute="top" secondItem="eZq-yd-Hmm" secondAttribute="bottom" constant="40" id="Wkl-9g-b0h"/>
                             <constraint firstAttribute="bottom" secondItem="0ig-tK-sCI" secondAttribute="bottom" id="XHh-ou-8Gy"/>
                             <constraint firstAttribute="trailing" secondItem="8t5-1J-LBf" secondAttribute="trailing" id="fi4-hc-Xzm"/>
-                            <constraint firstAttribute="height" constant="132" id="hec-lp-Kn9"/>
+                            <constraint firstAttribute="height" constant="430" id="hec-lp-Kn9"/>
+                            <constraint firstAttribute="trailing" secondItem="Zns-TT-TzV" secondAttribute="trailing" constant="4" id="llC-EH-O4t"/>
                             <constraint firstItem="eZq-yd-Hmm" firstAttribute="leading" secondItem="1fZ-aC-6qq" secondAttribute="leading" id="sA3-NL-mis"/>
                             <constraint firstItem="0ig-tK-sCI" firstAttribute="leading" secondItem="1fZ-aC-6qq" secondAttribute="leading" id="tq7-in-awz"/>
-                            <constraint firstItem="2Uz-ck-vXK" firstAttribute="top" secondItem="eZq-yd-Hmm" secondAttribute="bottom" constant="16" id="wrN-qP-eI5"/>
+                            <constraint firstItem="2Uz-ck-vXK" firstAttribute="top" secondItem="eZq-yd-Hmm" secondAttribute="bottom" constant="13" id="wrN-qP-eI5"/>
                             <constraint firstItem="eZq-yd-Hmm" firstAttribute="top" secondItem="1fZ-aC-6qq" secondAttribute="top" id="y0l-Lb-Te2"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -145,10 +166,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="collectionView" destination="Zns-TT-TzV" id="Hni-GX-LZg"/>
+                <outlet property="heightConstant" destination="hec-lp-Kn9" id="rvR-ar-E2S"/>
                 <outlet property="uploadButton" destination="cIf-rj-XWx" id="Trr-Qv-Zvh"/>
                 <outlet property="viewUploadButton" destination="2Uz-ck-vXK" id="Tul-wp-jqk"/>
             </connections>
-            <point key="canvasLocation" x="28.985507246376812" y="97.098214285714278"/>
+            <point key="canvasLocation" x="28.985507246376812" y="198.88392857142856"/>
         </tableViewCell>
     </objects>
     <resources>
