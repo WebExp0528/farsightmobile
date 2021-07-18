@@ -15,13 +15,13 @@ protocol IJobService {
     func getJobs(byUserId userId: String, completion: @escaping ResponseJobList)
     func getJobDetail(byUserId userId: String, won: String ,completion: @escaping ResponseJobDetail)
     func getPhotos(byUserId userId: String, won: String ,completion: @escaping ResponseJobPhotos)
-
+    func upload(userId:String , won:String, parameters: [String:Any],completion: @escaping ([String: Any]?, Error?)->()) 
 
     
 }
 class JobService: IJobService {
  
-    func convertDATtoDTOPhotos(i: [[String:String]]) -> [DTOPhotos] {
+    func convertDATtoDTOPhotos(i: [[String:Any]]) -> [DTOPhotos] {
         
         var photos = [DTOPhotos]()
         for photo in i {
@@ -252,8 +252,50 @@ class JobService: IJobService {
         }
         return dtoJobList
     }
+    func upload(userId:String , won:String, parameters: [String:Any],completion: @escaping ([String: Any]?, Error?)->()) {
+        self.postwithBody(userId: userId, won: won, parameters: parameters) { (data, error) in
+            
+        }
+    }
+  
+    /// Warning - this method is using URLEncoding.httpBody
+    func postwithBody(userId:String , won:String, parameters: [String:Any],completion: @escaping ([String: Any]?, Error?)->()) {
+        
+        var headers :HTTPHeaders =  []
+        headers["Content-Type"] = "form-data"
+        headers["X-USER-ID"] = userId
+        headers["X-APP-ID"] = Config.appId
+        let url = Config.shared.getPhotosURL + won + "/photo"
+
+       // let params = nil //JLSwiftUtility.jsonToDictionary(from: parameters)
     
+        let group = DispatchGroup()
+        
+        group.enter()
+        AF.request(url, method: .post, parameters: parameters, encoding:JSONEncoding.default, headers: headers).responseJSON(completionHandler: { serverResponse in
+           
+            group.leave()
+                switch serverResponse.result {
+                    
+                case .success(let value):
     
+                    
+                break;
+                case .failure(let error):
+   
+                  
+                     break;
+ 
+                }
+                
+           
+            group.notify(queue: .main) {
+                completion(nil,nil)
+            }
+
+            
+        })
+    }
     func getPhotos(byUserId userId: String, won: String, completion: @escaping ResponseJobPhotos) {
         
         let parameters: HTTPHeaders = ["X-USER-ID": userId,

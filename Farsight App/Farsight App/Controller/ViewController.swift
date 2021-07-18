@@ -38,7 +38,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.tableFooterView = UIView()
         self.tableView.backgroundColor = #colorLiteral(red: 0.6704089046, green: 0.6745685935, blue: 0.6744734645, alpha: 1)
         mJobListPresenter = JobListPresenter(withJobService: JobService(), jobListView: self)
-        mJobListPresenter.getJobsList(userId:Config.userId)
+        
+        let controller = JobDetailViewController(nibName: "JobDetailViewController", bundle: nil)
+        controller.won = "05993352"
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+        // mJobListPresenter.getJobsList(userId:Config.userId)
         // Do any additional setup after loading the view.
     }
     
@@ -56,7 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let mJob = self.mJobsList[indexPath.row];
         
         cell.wonLbl.text = "WorkOrder#\(mJob.won)"
-        cell.addressLbl.text =  mJob.address_street + mJob.address_city + mJob.address_state
+        cell.addressLbl.text =  mJob.address_street + " " + mJob.address_city + " " + mJob.address_state
         cell.cityLbl.text = mJob.description
         cell.workOrderedLbl.text = mJob.work_ordered
         

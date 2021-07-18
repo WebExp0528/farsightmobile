@@ -1,24 +1,36 @@
 PODS:
   - Alamofire (5.4.3)
+  - PryntTrimmerView (4.0.2)
+  - SteviaLayout (4.7.3)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.1)
+  - YPImagePicker (4.5.0):
+    - PryntTrimmerView (~> 4.0.2)
+    - SteviaLayout (~> 4.7.3)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - SVProgressHUD
   - SwiftyJSON
+  - YPImagePicker
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - PryntTrimmerView
+    - SteviaLayout
     - SVProgressHUD
     - SwiftyJSON
+    - YPImagePicker
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: 565e5d82250bcef67a3b71d8f2f010c0e2d7ee17
+PODFILE CHECKSUM: a1d99a1c5aff298be3c01608f64e80b174934a12
 
 COCOAPODS: 1.10.1

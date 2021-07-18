@@ -94,5 +94,29 @@ class JobListPresenter: NSObject {
         }
         
     }
+    func uploadPhotos(userId: String, won: String, params: [String:Any]) {
+            
+         if won.isEmpty {
+            return
+          }
+        mView.showLoader()
+        
+        self.mJobService.upload(userId: userId, won: won, parameters: params) { (dtoPhotos, error) in
+            
+                   if error != nil {
+                                            
+                       self.mView.hideLoader()
+                                             
+                       self.mView.showErrorMessage(msg: "Invalid Data!!!")
+                                             
+                       return
+                                    
+                   }
+           
+                          
+                   self.mView.hideLoader()
+        }
+        
+    }
 
 }

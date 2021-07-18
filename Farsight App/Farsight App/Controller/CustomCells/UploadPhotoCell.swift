@@ -12,6 +12,8 @@ class UploadPhotoCell: UITableViewCell {
     @IBOutlet weak var viewUploadButton: UIButton!
     
     @IBOutlet weak var uploadButton: UIButton!
+    var uploadHandler : (() -> ())?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,6 +26,8 @@ class UploadPhotoCell: UITableViewCell {
     }
     
     @IBAction func uploadBtnAction(_ sender: Any) {
-        
+        if let tapHandler = self.uploadHandler {
+            tapHandler()
+        }
     }
 }
