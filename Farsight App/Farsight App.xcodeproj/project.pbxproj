@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1800FA07269FF3010075922C /* JobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA06269FF3010075922C /* JobService.swift */; };
-		1800FA11269FF3460075922C /* DTOJobList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA10269FF3460075922C /* DTOJobList.swift */; };
+		1800FA11269FF3460075922C /* q vACC    E#.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA10269FF3460075922C /* q vACC    E#.swift */; };
 		1800FA1A269FF4110075922C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA19269FF4110075922C /* Config.swift */; };
 		1800FA22269FF4910075922C /* JobListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA21269FF4910075922C /* JobListPresenter.swift */; };
 		1800FA2E269FF5020075922C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA28269FF5010075922C /* RoundButton.swift */; };
@@ -60,7 +60,7 @@
 		1127D3EA1242079E0D0CAA52 /* Pods-Farsight App-Farsight AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App-Farsight AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1418D97F84B18810EC1CD0B7 /* Pods-Farsight AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight AppTests.release.xcconfig"; path = "Target Support Files/Pods-Farsight AppTests/Pods-Farsight AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		1800FA06269FF3010075922C /* JobService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobService.swift; sourceTree = "<group>"; };
-		1800FA10269FF3460075922C /* DTOJobList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOJobList.swift; sourceTree = "<group>"; };
+		1800FA10269FF3460075922C /* q vACC    E#.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "q vACC    E#.swift"; sourceTree = "<group>"; };
 		1800FA19269FF4110075922C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		1800FA21269FF4910075922C /* JobListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListPresenter.swift; sourceTree = "<group>"; };
 		1800FA28269FF5010075922C /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		1800FA0E269FF3300075922C /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				1800FA10269FF3460075922C /* DTOJobList.swift */,
+				1800FA10269FF3460075922C /* q vACC    E#.swift */,
 				18D8667826A3115D00DE16AF /* DTOPhotos.swift */,
 				18D8667326A2EC0700DE16AF /* DTOJobDetail.swift */,
 			);
@@ -569,7 +569,7 @@
 			files = (
 				1800FA2E269FF5020075922C /* RoundButton.swift in Sources */,
 				18D8667926A3115D00DE16AF /* DTOPhotos.swift in Sources */,
-				1800FA11269FF3460075922C /* DTOJobList.swift in Sources */,
+				1800FA11269FF3460075922C /* q vACC    E#.swift in Sources */,
 				18D8667426A2EC0700DE16AF /* DTOJobDetail.swift in Sources */,
 				1800FA22269FF4910075922C /* JobListPresenter.swift in Sources */,
 				79E77BE4269CD73000247D00 /* ViewController.swift in Sources */,
