@@ -19,7 +19,7 @@ class UploadPhotoCell: UITableViewCell,  UICollectionViewDelegate , UICollection
     var uploadHandler : (() -> ())?
     var viewUploadedPhotos : (() -> ())?
     var postedImages = [DTOPhotos]()
-    
+    var noOfPage = 0
     override func awakeFromNib() {
         super.awakeFromNib()
         self.collectionView.delegate = self
@@ -33,9 +33,23 @@ class UploadPhotoCell: UITableViewCell,  UICollectionViewDelegate , UICollection
 
         // Configure the view for the selected state
     }
+    
+    func getPageItems(page: UInt, allItems: [DTOPhotos], maxItemsPerPage: UInt) -> [DTOPhotos] {
+        let startIndex = Int(page * maxItemsPerPage)
+        var length = max(0, allItems.count - startIndex)
+        length = min(Int(maxItemsPerPage), length)
+
+        guard length > 0 else { return [] }
+
+        return Array(allItems[startIndex..<(startIndex + length)])
+    }
     func setup(canViewUploaded:Bool, photos:[DTOPhotos]) {
         
-        self.postedImages = photos
+       
+        self.noOfPage = Int(ceil(Double(Float(photos.count)/20.0)))
+        print("Number of pages", self.noOfPage)
+        
+        self.postedImages = self.getPageItems(page:0, allItems: photos, maxItemsPerPage: 20)
 
         if (canViewUploaded) {
             
@@ -46,7 +60,7 @@ class UploadPhotoCell: UITableViewCell,  UICollectionViewDelegate , UICollection
             
         } else {
             
-            self.viewUploadButton.setTitle("View \(self.postedImages.count) Uploaded Images", for: .normal)
+            self.viewUploadButton.setTitle("View \(photos.count) Uploaded Images", for: .normal)
             self.collectionView.isHidden = true
             self.heightConstant.constant = 130
 
