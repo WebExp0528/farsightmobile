@@ -49,7 +49,8 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
         uploadPhotoCell.uploadHandler = {
             let picker = YPImagePicker(configuration: self.config)
             picker.didFinishPicking { [unowned picker] items, cancelled in
-                for item in items {
+                if (!cancelled) {
+                    for item in items {
                     switch item {
                     case .photo(let photo):
                         
@@ -76,6 +77,7 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
                         
                     case .video(let video):
                         print(video)
+                    }
                     }
                 }
                 picker.dismiss(animated: true, completion: nil)
