@@ -8,16 +8,95 @@
 import Foundation
 import Alamofire
 protocol IJobService {
-      typealias ResponseJobList = ([DTOJobList]? ,Error?) -> Void
+    typealias ResponseJobList = ([DTOJobList]? ,Error?) -> Void
+    typealias ResponseJobDetail = (DTOJobDetail? ,Error?) -> Void
+    typealias ResponseJobPhotos = ([DTOPhotos]? ,Error?) -> Void
 
     func getJobs(byUserId userId: String, completion: @escaping ResponseJobList)
-
-    
+    func getJobDetail(byUserId userId: String, won: String ,completion: @escaping ResponseJobDetail)
+    func getPhotos(byUserId userId: String, won: String ,completion: @escaping ResponseJobPhotos)
+    func upload(userId:String , won:String, parameters: [String:Any],completion: @escaping ([String: Any]?, Error?)->()) 
 
     
 }
 class JobService: IJobService {
+ 
+    func convertDATtoDTOPhotos(i: [[String:Any]]) -> [DTOPhotos] {
+        
+        var photos = [DTOPhotos]()
+        for photo in i {
     
+            let dtoPhoto = DTOPhotos(label: (photo["label"] as? String) ?? "", image_url_full: (photo["image_url_full"] as? String) ?? "")
+            photos.append(dtoPhoto)
+        }
+       return photos
+    }
+
+    func convertDATtoDTOJobDetail(i: [String:AnyObject]) -> DTOJobDetail {
+        
+        
+        
+        
+        
+        var last_status_update:LastStatusUpdate?
+        var instructionsFullList: [InstructionsFull] = []
+        
+        
+        if let last_statusUpdate = i["last_status_update"] as? [String:Any] {
+            
+            var delay_reason = ""
+            var explanation = ""
+            var order_status = ""
+            var won  = ""
+            var expected_upload_date = ""
+            
+            
+            if let delayreason = last_statusUpdate["delay_reason"] as? String {
+                delay_reason = delayreason
+            }
+            if let explan = last_statusUpdate["explanation"] as? String {
+                explanation = explan
+            }
+            if let orderstatus = last_statusUpdate["order_status"] as? String {
+                order_status = orderstatus
+            }
+            if let expected_uploadDate = last_statusUpdate["expected_upload_date"] as? String {
+                expected_upload_date = expected_uploadDate
+            }
+            if let wonn = i["won"] as? String {
+                won = wonn
+            }
+            last_status_update = LastStatusUpdate(delay_reason: delay_reason, expected_upload_date: expected_upload_date, explanation: explanation, order_status: order_status, won: won)
+                
+        }
+        
+        if let instructionsFull = i["instructions_full"] as? [[String:Any]] {
+            
+            var type: String = ""
+            var action: String = ""
+            var instruction: String = ""
+            for ins in instructionsFull {
+            
+            if let typee = ins["type"] as? String {
+                type = typee
+            }
+            if let act = ins["action"] as? String {
+                action = act
+            }
+            if let instr = ins["instruction"] as? String {
+                instruction = instr
+            }
+            instructionsFullList.append(InstructionsFull(type: type, action: action, instruction: instruction))
+        
+           
+       
+            }
+            
+        }
+     
+            
+        return DTOJobDetail(api_user: (i["api_user"] as? String) ?? "", vendor_name:  (i["vendor_name"] as? String) ?? "", support_contact: (i["support_contact"] as? String) ?? "", won: (i["won"] as? String) ?? "", uri: (i["uri"] as? String) ?? "", due_date: (i["due_date"] as? String) ?? "", created_date: (i["created_date"] as? String) ?? "", address_street: (i["address_street"] as? String) ?? "", address_city: (i["address_city"] as? String) ?? "", address_state: (i["address_state"] as? String) ?? "", address_zip_code: (i["address_zip_code"] as? String) ?? "", gps_latitude: (i["gps_latitude"] as? String) ?? "", gps_longitude: (i["gps_longitude"] as? String) ?? "", image_url_tiny2: (i["image_url_tiny2"] as? String) ?? "", image_url_tiny: (i["image_url_tiny"] as? String) ?? "", image_url_small: (i["image_url_small"] as? String) ?? "", image_url_medium: (i["image_url_medium"] as? String) ?? "", image_url_full: (i["image_url_full"] as? String) ?? "", interior_access_needed: (i["interior_access_needed"] as? Bool) ?? false, lot_size_sq_ft: (i["lot_size_sq_ft"] as? Int) ?? 0, priority: (i["priority"] as? Int) ?? 0, work_order_type: (i["work_order_type"] as? String) ?? "", work_ordered: (i["work_ordered"] as? String) ?? "", app_action: (i["app_action"] as? String) ?? "", source_won: (i["source_won"] as? String) ?? "", status: (i["status"] as? String) ?? "", instructions_full: instructionsFullList, last_status_update: last_status_update)
+    }
     func convertDATtoDTOJobList(value: [[String:AnyObject]]) -> [DTOJobList] {
         
         var dtoJobList = [DTOJobList]()
@@ -173,8 +252,116 @@ class JobService: IJobService {
         }
         return dtoJobList
     }
+    func upload(userId:String , won:String, parameters: [String:Any],completion: @escaping ([String: Any]?, Error?)->()) {
+        self.postwithBody(userId: userId, won: won, parameters: parameters) { (data, error) in
+            
+        }
+    }
+  
+    /// Warning - this method is using URLEncoding.httpBody
+    func postwithBody(userId:String , won:String, parameters: [String:Any],completion: @escaping ([String: Any]?, Error?)->()) {
+        
+        var headers :HTTPHeaders =  []
+        headers["Content-Type"] = "form-data"
+        headers["X-USER-ID"] = userId
+        headers["X-APP-ID"] = Config.appId
+        let url = Config.shared.getPhotosURL + won + "/photo"
+
+       // let params = nil //JLSwiftUtility.jsonToDictionary(from: parameters)
     
-       
+        let group = DispatchGroup()
+        
+        group.enter()
+        AF.request(url, method: .post, parameters: parameters, encoding:JSONEncoding.default, headers: headers).responseJSON(completionHandler: { serverResponse in
+           
+            group.leave()
+                switch serverResponse.result {
+                    
+                case .success(let value):
+    
+                    
+                break;
+                case .failure(let error):
+   
+                  
+                     break;
+ 
+                }
+                
+           
+            group.notify(queue: .main) {
+                completion(nil,nil)
+            }
+
+            
+        })
+    }
+    func getPhotos(byUserId userId: String, won: String, completion: @escaping ResponseJobPhotos) {
+        
+        let parameters: HTTPHeaders = ["X-USER-ID": userId,
+                          "X-APP-ID": Config.appId,
+                                "Content-Type": "application/json"
+        ]
+        let url = Config.shared.getPhotosURL + won + "/photo"
+        AF.request(url, headers: parameters).responseJSON { response in
+          //  debugPrint(response)
+
+            switch response.result {
+            case .success(let value):
+                    
+                    if let array = value as? [[String:String]] {
+                        let dtoJobDetailList =  self.convertDATtoDTOPhotos(i: array)
+                     completion(dtoJobDetailList,nil)
+                    } else {
+                     completion(nil,NSError() as Error)
+                    }
+                
+                
+                break
+                
+            case .failure(let error):
+                print(error)
+                 completion(nil ,NSError() as Error)
+                break
+                
+            }
+        }
+    }
+ 
+    
+    func getJobDetail(byUserId userId: String, won: String, completion: @escaping ResponseJobDetail) {
+        
+        let parameters: HTTPHeaders = ["X-USER-ID": userId,
+                          "X-APP-ID": Config.appId,
+                                "Content-Type": "application/json"
+        ]
+        let url = Config.shared.jobDetailURL + won
+        AF.request(url, headers: parameters).responseJSON { response in
+          //  debugPrint(response)
+
+            switch response.result {
+            case .success(let value):
+                    
+                    if let array = value as? [String:AnyObject] {
+                        let dtoJobDetailList =  self.convertDATtoDTOJobDetail(i: array)
+                     completion(dtoJobDetailList,nil)
+                    } else {
+                     completion(nil,NSError() as Error)
+                    }
+                
+                
+                break
+                
+            case .failure(let error):
+                print(error)
+                 completion(nil ,NSError() as Error)
+                break
+                
+            }
+        }
+    }
+ 
+    
     func getJobs(byUserId userId: String, completion: @escaping ResponseJobList) {
         
 

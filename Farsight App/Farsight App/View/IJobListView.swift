@@ -12,5 +12,7 @@ protocol IJobListView {
     func hideLoader()
     func showJobsList(dtoJobs: [DTOJobList]?)
     func showErrorMessage(msg:String)
+    func showJobsDetail(dtoDetail:DTOJobDetail?)
+    func showJobsPhotos(dtoPhotos:[DTOPhotos]?)
 
 }

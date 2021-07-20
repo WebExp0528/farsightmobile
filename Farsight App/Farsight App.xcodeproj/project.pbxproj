@@ -16,7 +16,15 @@
 		1800FA30269FF5020075922C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA2B269FF5010075922C /* UIImageView.swift */; };
 		1800FA31269FF5020075922C /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA2D269FF5020075922C /* RoundedLabel.swift */; };
 		1800FA39269FF55B0075922C /* IJobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA38269FF55B0075922C /* IJobListView.swift */; };
+		186B5F7F26A41E89006AB8DC /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B5F7D26A41E89006AB8DC /* GalleryCell.swift */; };
+		186B5F8026A41E89006AB8DC /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186B5F7E26A41E89006AB8DC /* GalleryCell.xib */; };
+		187F691A26A2DC1A005FFE52 /* UploadPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */; };
+		187F691B26A2DC1A005FFE52 /* UploadPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */; };
 		18BCEDE226A0CBC000AA2637 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCEDE126A0CBC000AA2637 /* Extension.swift */; };
+		18D8667426A2EC0700DE16AF /* DTOJobDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8667326A2EC0700DE16AF /* DTOJobDetail.swift */; };
+		18D8667926A3115D00DE16AF /* DTOPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8667826A3115D00DE16AF /* DTOPhotos.swift */; };
+		18EAFB1126A2D2B100314610 /* JobDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAFB0F26A2D2B100314610 /* JobDetailViewController.swift */; };
+		18EAFB1226A2D2B100314610 /* JobDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EAFB1026A2D2B100314610 /* JobDetailViewController.xib */; };
 		49D2EE835E0AF50985B87C74 /* Pods_Farsight_App_Farsight_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051F280E568B17E60C3661CD /* Pods_Farsight_App_Farsight_AppUITests.framework */; };
 		6E66BD216AC06F769F105DAB /* Pods_Farsight_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C729C3ABD156B611F231302 /* Pods_Farsight_App.framework */; };
 		79E77BE0269CD73000247D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BDF269CD73000247D00 /* AppDelegate.swift */; };
@@ -60,7 +68,15 @@
 		1800FA2B269FF5010075922C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		1800FA2D269FF5020075922C /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
 		1800FA38269FF55B0075922C /* IJobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IJobListView.swift; sourceTree = "<group>"; };
+		186B5F7D26A41E89006AB8DC /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		186B5F7E26A41E89006AB8DC /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
+		187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoCell.swift; sourceTree = "<group>"; };
+		187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadPhotoCell.xib; sourceTree = "<group>"; };
 		18BCEDE126A0CBC000AA2637 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		18D8667326A2EC0700DE16AF /* DTOJobDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOJobDetail.swift; sourceTree = "<group>"; };
+		18D8667826A3115D00DE16AF /* DTOPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOPhotos.swift; sourceTree = "<group>"; };
+		18EAFB0F26A2D2B100314610 /* JobDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewController.swift; sourceTree = "<group>"; };
+		18EAFB1026A2D2B100314610 /* JobDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetailViewController.xib; sourceTree = "<group>"; };
 		25B8F45C3EDCC4E05E2B4FE7 /* Pods-Farsight App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App.release.xcconfig"; path = "Target Support Files/Pods-Farsight App/Pods-Farsight App.release.xcconfig"; sourceTree = "<group>"; };
 		410A73957D94B1D90A5AC141 /* Pods_Farsight_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farsight_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF91A525D27D52D6C097D7D /* Pods-Farsight App-Farsight AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App-Farsight AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +154,8 @@
 		1800FA05269FF2E30075922C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				187F691726A2DBF6005FFE52 /* CustomCells */,
+				18EAFB0E26A2D29D00314610 /* JobDetailViewController */,
 				79E77BE3269CD73000247D00 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -147,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				1800FA10269FF3460075922C /* DTOJobList.swift */,
+				18D8667826A3115D00DE16AF /* DTOPhotos.swift */,
+				18D8667326A2EC0700DE16AF /* DTOJobDetail.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -194,12 +214,32 @@
 			path = RoundLabel;
 			sourceTree = "<group>";
 		};
+		187F691726A2DBF6005FFE52 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */,
+				187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */,
+				186B5F7D26A41E89006AB8DC /* GalleryCell.swift */,
+				186B5F7E26A41E89006AB8DC /* GalleryCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		18BCEDE026A0CBAF00AA2637 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				18BCEDE126A0CBC000AA2637 /* Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18EAFB0E26A2D29D00314610 /* JobDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18EAFB0F26A2D2B100314610 /* JobDetailViewController.swift */,
+				18EAFB1026A2D2B100314610 /* JobDetailViewController.xib */,
+			);
+			path = JobDetailViewController;
 			sourceTree = "<group>";
 		};
 		2DAE952D1A0F55786FAF3E08 /* Frameworks */ = {
@@ -395,8 +435,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E77BEC269CD73000247D00 /* LaunchScreen.storyboard in Resources */,
+				18EAFB1226A2D2B100314610 /* JobDetailViewController.xib in Resources */,
 				79E77BE9269CD73000247D00 /* Assets.xcassets in Resources */,
 				79E77BE7269CD73000247D00 /* Main.storyboard in Resources */,
+				186B5F8026A41E89006AB8DC /* GalleryCell.xib in Resources */,
+				187F691B26A2DC1A005FFE52 /* UploadPhotoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +568,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1800FA2E269FF5020075922C /* RoundButton.swift in Sources */,
+				18D8667926A3115D00DE16AF /* DTOPhotos.swift in Sources */,
 				1800FA11269FF3460075922C /* DTOJobList.swift in Sources */,
+				18D8667426A2EC0700DE16AF /* DTOJobDetail.swift in Sources */,
 				1800FA22269FF4910075922C /* JobListPresenter.swift in Sources */,
 				79E77BE4269CD73000247D00 /* ViewController.swift in Sources */,
 				79E77BE0269CD73000247D00 /* AppDelegate.swift in Sources */,
@@ -533,7 +578,10 @@
 				1800FA31269FF5020075922C /* RoundedLabel.swift in Sources */,
 				1800FA39269FF55B0075922C /* IJobListView.swift in Sources */,
 				1800FA30269FF5020075922C /* UIImageView.swift in Sources */,
+				18EAFB1126A2D2B100314610 /* JobDetailViewController.swift in Sources */,
+				186B5F7F26A41E89006AB8DC /* GalleryCell.swift in Sources */,
 				18BCEDE226A0CBC000AA2637 /* Extension.swift in Sources */,
+				187F691A26A2DC1A005FFE52 /* UploadPhotoCell.swift in Sources */,
 				1800FA07269FF3010075922C /* JobService.swift in Sources */,
 				1800FA1A269FF4110075922C /* Config.swift in Sources */,
 				1800FA2F269FF5020075922C /* DesignableView.swift in Sources */,

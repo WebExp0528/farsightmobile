@@ -9,6 +9,8 @@ target 'Farsight App' do
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 5.2'
   pod 'SVProgressHUD'
+  pod 'YPImagePicker'
+
 
   target 'Farsight AppTests' do
     inherit! :search_paths
