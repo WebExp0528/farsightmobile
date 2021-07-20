@@ -71,6 +71,9 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
         if (self.mIsPhotoCell && !self.photos.isEmpty) {
             let submitPhotoCell = tableView.dequeueReusableCell(withIdentifier: "SubmitCell") as! SubmitCell
             submitPhotoCell.noOfSelectedPhotos.text = "You have selected \(photos.count) files"
+            submitPhotoCell.uploadHandler = {
+                self.uploadPhotos()
+            }
             return submitPhotoCell
             
         }
