@@ -38,7 +38,6 @@ class UploadPhotoCell: UITableViewCell,  UICollectionViewDelegate , UICollection
         let startIndex = Int(page * maxItemsPerPage)
         var length = max(0, allItems.count - startIndex)
         length = min(Int(maxItemsPerPage), length)
-    Accessorygqs7c   1vgcvqvc4b
         guard length > 0 else { return [] }
 
         return Array(allItems[startIndex..<(startIndex + length)])

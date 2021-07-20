@@ -20,6 +20,8 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
     @IBOutlet weak var cityLbl: UILabel!
     var jobDetail: DTOJobDetail?
     var dtoPhotos: [DTOPhotos] = []
+    var photos: [YPMediaItem] = []
+    var mIsPhotoCell = false
     var uploaded = 0
     var won:String = ""
     var viewUploadedPhotos = false
@@ -33,9 +35,51 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+    func uploadPhotos() {
+        for item in self.photos {
+        switch item {
+        case .photo(let photo):
+            
+
+            let param = [
+                
+                "evidenceType": "photo",
+                "fileExt":"jpg",
+                "fileName":"Test",
+                "fileType": "picture",
+                "timestamp":"null",
+                "gpsAccuracy":"null",
+                "gpsLatitude":"null",
+                "gpsLongitude":"null",
+                "gpsTimestamp":"null",
+                "parentUuid":"null",
+                "uuid":UUID().uuidString,
+                "imageLabel":"Before",
+                "file": self.convertImageToBase64(image: photo.image)
+                
+            ]
+            self.mJobListPresenter.uploadPhotos(userId: Config.userId, won: self.won, params: param)
+
+            
+        case .video(let video):
+            print(video)
+        }
+        }
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if (self.mIsPhotoCell && !self.photos.isEmpty) {
+            let submitPhotoCell = tableView.dequeueReusableCell(withIdentifier: "SubmitCell") as! SubmitCell
+            submitPhotoCell.noOfSelectedPhotos.text = "You have selected \(photos.count) files"
+            return submitPhotoCell
+            
+        }
+        
+        
         let uploadPhotoCell = tableView.dequeueReusableCell(withIdentifier: "UploadPhotoCell") as! UploadPhotoCell
         uploadPhotoCell.setup(canViewUploaded: self.viewUploadedPhotos, photos: self.dtoPhotos)
+        self.photos.removeAll()
+        self.mIsPhotoCell = false
         uploadPhotoCell.viewUploadedPhotos = {
             if (self.viewUploadedPhotos) {
                 self.viewUploadedPhotos = false
@@ -50,35 +94,10 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
             let picker = YPImagePicker(configuration: self.config)
             picker.didFinishPicking { [unowned picker] items, cancelled in
                 if (!cancelled) {
-                    for item in items {
-                    switch item {
-                    case .photo(let photo):
-                        
- 
-                        let param = [
-                            
-                            "evidenceType": "photo",
-                            "fileExt":"jpg",
-                            "fileName":"Test",
-                            "fileType": "picture",
-                            "timestamp":"null",
-                            "gpsAccuracy":"null",
-                            "gpsLatitude":"null",
-                            "gpsLongitude":"null",
-                            "gpsTimestamp":"null",
-                            "parentUuid":"null",
-                            "uuid":UUID().uuidString,
-                            "imageLabel":"Before",
-                            "file": self.convertImageToBase64(image: photo.image)
-                            
-                        ]
-                        self.mJobListPresenter.uploadPhotos(userId: Config.userId, won: self.won, params: param)
-
-                        
-                    case .video(let video):
-                        print(video)
-                    }
-                    }
+                    self.photos.removeAll()
+                    self.photos = items
+                    self.mIsPhotoCell = true
+                    self.tableView.reloadData()
                 }
                 picker.dismiss(animated: true, completion: nil)
             }
@@ -133,6 +152,8 @@ class JobDetailViewController: UIViewController,UITableViewDelegate,  UITableVie
         
         self.tableView.isScrollEnabled = false
         self.tableView.register(UINib(nibName: "UploadPhotoCell", bundle: nil), forCellReuseIdentifier: "UploadPhotoCell")
+        self.tableView.register(UINib(nibName: "SubmitCell", bundle: nil), forCellReuseIdentifier: "SubmitCell")
+
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 500
         // Do any additional setup after loading the view.

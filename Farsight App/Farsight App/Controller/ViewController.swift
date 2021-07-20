@@ -16,6 +16,7 @@ class JobListCell: UITableViewCell {
     @IBOutlet weak var dueDateLbl: UILabel!
     @IBOutlet weak var PastDue: UILabel!
 
+ 
 
     @IBOutlet weak var img: UIImageView!
     
@@ -24,7 +25,9 @@ class JobListCell: UITableViewCell {
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, IJobListView {
   
     
-    
+    @IBOutlet weak var tfSearch: UITextField!
+    @IBOutlet weak var labelOne: UILabel!
+    @IBOutlet weak var labelTwo: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     private var mJobListPresenter: JobListPresenter!
@@ -33,6 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         
+        self.labelOne.text = "Hello Joel MSCall, You are viewing \(self.mJobsList.count) of \(self.mJobsList.count) open work orders."
         self.tableView.estimatedRowHeight = 400
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.tableFooterView = UIView()
@@ -42,6 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         mJobListPresenter.getJobsList(userId:Config.userId)
         // Do any additional setup after loading the view.
     }
+    
     
     func status(date: Date) {
         
@@ -128,8 +133,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func showJobsList(dtoJobs: [DTOJobList]?) {
+        
         DispatchQueue.main.async {
             
+            self.labelOne.text = "Hello Joel MSCall, You are viewing \(self.mJobsList.count) of \(self.mJobsList.count) open work orders."
+
             self.mJobsList.removeAll()
             if let dtoJobsList = dtoJobs {
                 self.mJobsList = dtoJobsList
@@ -148,6 +156,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    @IBAction func searchButtonClicked(_ sender: Any) {
+        
+    }
     
     
 }
