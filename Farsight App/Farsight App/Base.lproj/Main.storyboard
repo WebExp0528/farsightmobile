@@ -43,7 +43,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="172" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7NE-16-dy7">
-                                <rect key="frame" x="0.0" y="179.5" width="414" height="716.5"/>
+                                <rect key="frame" x="0.0" y="185.5" width="414" height="710.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobListCell" rowHeight="172" id="gl3-HN-uX8" customClass="JobListCell" customModule="Farsight_App" customModuleProvider="target">
@@ -351,7 +351,7 @@
                             <constraint firstItem="7NE-16-dy7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="geC-YK-CS0"/>
                             <constraint firstItem="V1A-p8-kSn" firstAttribute="height" secondItem="cce-pG-OGU" secondAttribute="height" id="hIF-Cz-0V7"/>
                             <constraint firstItem="ZcF-1d-W3P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="mcS-jf-6pV"/>
-                            <constraint firstItem="7NE-16-dy7" firstAttribute="top" secondItem="ZcF-1d-W3P" secondAttribute="bottom" constant="22" id="u48-Y8-P5K"/>
+                            <constraint firstItem="7NE-16-dy7" firstAttribute="top" secondItem="ZcF-1d-W3P" secondAttribute="bottom" constant="28" id="u48-Y8-P5K"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FarSight" id="RBX-eM-3n8"/>
