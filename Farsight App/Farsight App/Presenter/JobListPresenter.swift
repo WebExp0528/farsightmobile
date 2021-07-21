@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class JobListPresenter: NSObject {
     private var mView:IJobListView
@@ -94,14 +95,14 @@ class JobListPresenter: NSObject {
         }
         
     }
-    func uploadPhotos(userId: String, won: String, params: [String:Any]) {
+    func uploadPhotos(userId: String, won: String, params: MultipartFormData) {
             
          if won.isEmpty {
             return
           }
         mView.showLoader()
         
-        self.mJobService.upload(userId: userId, won: won, parameters: params) { (dtoPhotos, error) in
+        self.mJobService.uploadPhoto(userId: userId, won: won, parameters: params) { (dtoPhotos, error) in
             
                    if error != nil {
                                             

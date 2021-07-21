@@ -7,6 +7,8 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
+
 protocol IJobService {
     typealias ResponseJobList = ([DTOJobList]? ,Error?) -> Void
     typealias ResponseJobDetail = (DTOJobDetail? ,Error?) -> Void
@@ -16,9 +18,9 @@ protocol IJobService {
     func getJobDetail(byUserId userId: String, won: String ,completion: @escaping ResponseJobDetail)
     func getPhotos(byUserId userId: String, won: String ,completion: @escaping ResponseJobPhotos)
     func upload(userId:String , won:String, parameters: [String:Any],completion: @escaping ([String: Any]?, Error?)->()) 
-
-    
+    func uploadPhoto(userId:String , won:String, parameters: MultipartFormData,completion: @escaping ([String: Any]?, Error?)->())
 }
+
 class JobService: IJobService {
  
     func convertDATtoDTOPhotos(i: [[String:Any]]) -> [DTOPhotos] {
@@ -33,11 +35,7 @@ class JobService: IJobService {
     }
 
     func convertDATtoDTOJobDetail(i: [String:AnyObject]) -> DTOJobDetail {
-        
-        
-        
-        
-        
+
         var last_status_update:LastStatusUpdate?
         var instructionsFullList: [InstructionsFull] = []
         
@@ -256,6 +254,49 @@ class JobService: IJobService {
         self.postwithBody(userId: userId, won: won, parameters: parameters) { (data, error) in
             
         }
+        
+    }
+    
+    func uploadPhoto(userId:String , won:String, parameters: MultipartFormData,completion: @escaping ([String: Any]?, Error?)->()) {
+        
+        var headers :HTTPHeaders =  []
+        headers["Content-Type"] = "form-data"
+        headers["X-USER-ID"] = userId
+        headers["X-APP-ID"] = Config.appId
+        let url = Config.shared.getPhotosURL + won + "/photo"
+        
+        AF.upload(multipartFormData: parameters, to: url, usingThreshold: UInt64.init(), method: .post, headers: headers).response { response in
+            switch response.result {
+                        case .success(let value):
+                            let json = JSON(value!)
+                            print(json)
+                        case .failure(let error):
+                            print(error)
+            }
+        }
+
+//        AF.upload(multipartFormData: MultipartFormData, to: url, method: .post, headers: headers)
+//            .uploadProgress(queue: .main) { progress in
+//            print("\(progress.fractionCompleted)")
+//                uploadProgress!(progress.fractionCompleted)
+//        }.response { response in
+//            switch response.result {
+//            case .success(let value):
+//                let json = JSON(value!)
+//                completion?(json)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//                var json = JSON()
+//                json["success"].bool = false
+//                if error.localizedDescription == "URLSessionTask failed with error: unsupported URL" {
+//                    json["message"].string = "Please check your network and try again"
+//                }
+//                else {
+//                    json["message"].string = error.localizedDescription
+//                }
+//                completion?(json)
+//            }
+//        }
     }
   
     /// Warning - this method is using URLEncoding.httpBody

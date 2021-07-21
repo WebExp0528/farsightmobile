@@ -20,6 +20,8 @@
 		186B5F8026A41E89006AB8DC /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186B5F7E26A41E89006AB8DC /* GalleryCell.xib */; };
 		187F691A26A2DC1A005FFE52 /* UploadPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */; };
 		187F691B26A2DC1A005FFE52 /* UploadPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */; };
+		18A2DAE426A75CDD00617415 /* SubmitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2DAE226A75CDD00617415 /* SubmitCell.swift */; };
+		18A2DAE526A75CDD00617415 /* SubmitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A2DAE326A75CDD00617415 /* SubmitCell.xib */; };
 		18BCEDE226A0CBC000AA2637 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCEDE126A0CBC000AA2637 /* Extension.swift */; };
 		18D8667426A2EC0700DE16AF /* DTOJobDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8667326A2EC0700DE16AF /* DTOJobDetail.swift */; };
 		18D8667926A3115D00DE16AF /* DTOPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8667826A3115D00DE16AF /* DTOPhotos.swift */; };
@@ -72,6 +74,8 @@
 		186B5F7E26A41E89006AB8DC /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
 		187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoCell.swift; sourceTree = "<group>"; };
 		187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadPhotoCell.xib; sourceTree = "<group>"; };
+		18A2DAE226A75CDD00617415 /* SubmitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitCell.swift; sourceTree = "<group>"; };
+		18A2DAE326A75CDD00617415 /* SubmitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitCell.xib; sourceTree = "<group>"; };
 		18BCEDE126A0CBC000AA2637 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		18D8667326A2EC0700DE16AF /* DTOJobDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOJobDetail.swift; sourceTree = "<group>"; };
 		18D8667826A3115D00DE16AF /* DTOPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOPhotos.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */,
 				187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */,
 				186B5F7D26A41E89006AB8DC /* GalleryCell.swift */,
+				18A2DAE226A75CDD00617415 /* SubmitCell.swift */,
+				18A2DAE326A75CDD00617415 /* SubmitCell.xib */,
 				186B5F7E26A41E89006AB8DC /* GalleryCell.xib */,
 			);
 			path = CustomCells;
@@ -439,6 +445,7 @@
 				79E77BE9269CD73000247D00 /* Assets.xcassets in Resources */,
 				79E77BE7269CD73000247D00 /* Main.storyboard in Resources */,
 				186B5F8026A41E89006AB8DC /* GalleryCell.xib in Resources */,
+				18A2DAE526A75CDD00617415 /* SubmitCell.xib in Resources */,
 				187F691B26A2DC1A005FFE52 /* UploadPhotoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +587,7 @@
 				1800FA30269FF5020075922C /* UIImageView.swift in Sources */,
 				18EAFB1126A2D2B100314610 /* JobDetailViewController.swift in Sources */,
 				186B5F7F26A41E89006AB8DC /* GalleryCell.swift in Sources */,
+				18A2DAE426A75CDD00617415 /* SubmitCell.swift in Sources */,
 				18BCEDE226A0CBC000AA2637 /* Extension.swift in Sources */,
 				187F691A26A2DC1A005FFE52 /* UploadPhotoCell.swift in Sources */,
 				1800FA07269FF3010075922C /* JobService.swift in Sources */,
@@ -769,7 +777,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Northsight.FarSightMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NorthSight.FarSightMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -790,7 +798,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Northsight.FarSightMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NorthSight.FarSightMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
