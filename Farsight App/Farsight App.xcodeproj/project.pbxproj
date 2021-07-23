@@ -7,415 +7,356 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1800FA07269FF3010075922C /* JobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA06269FF3010075922C /* JobService.swift */; };
-		1800FA11269FF3460075922C /* DTOJobList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA10269FF3460075922C /* DTOJobList.swift */; };
-		1800FA1A269FF4110075922C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA19269FF4110075922C /* Config.swift */; };
-		1800FA22269FF4910075922C /* JobListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA21269FF4910075922C /* JobListPresenter.swift */; };
-		1800FA2E269FF5020075922C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA28269FF5010075922C /* RoundButton.swift */; };
-		1800FA2F269FF5020075922C /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA29269FF5010075922C /* DesignableView.swift */; };
-		1800FA30269FF5020075922C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA2B269FF5010075922C /* UIImageView.swift */; };
-		1800FA31269FF5020075922C /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA2D269FF5020075922C /* RoundedLabel.swift */; };
-		1800FA39269FF55B0075922C /* IJobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800FA38269FF55B0075922C /* IJobListView.swift */; };
-		186B5F7F26A41E89006AB8DC /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B5F7D26A41E89006AB8DC /* GalleryCell.swift */; };
-		186B5F8026A41E89006AB8DC /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186B5F7E26A41E89006AB8DC /* GalleryCell.xib */; };
-		187F691A26A2DC1A005FFE52 /* UploadPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */; };
-		187F691B26A2DC1A005FFE52 /* UploadPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */; };
-		18A2DAE426A75CDD00617415 /* SubmitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2DAE226A75CDD00617415 /* SubmitCell.swift */; };
-		18A2DAE526A75CDD00617415 /* SubmitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A2DAE326A75CDD00617415 /* SubmitCell.xib */; };
-		18BCEDE226A0CBC000AA2637 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCEDE126A0CBC000AA2637 /* Extension.swift */; };
-		18D8667426A2EC0700DE16AF /* DTOJobDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8667326A2EC0700DE16AF /* DTOJobDetail.swift */; };
-		18D8667926A3115D00DE16AF /* DTOPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8667826A3115D00DE16AF /* DTOPhotos.swift */; };
-		18EAFB1126A2D2B100314610 /* JobDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAFB0F26A2D2B100314610 /* JobDetailViewController.swift */; };
-		18EAFB1226A2D2B100314610 /* JobDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EAFB1026A2D2B100314610 /* JobDetailViewController.xib */; };
-		49D2EE835E0AF50985B87C74 /* Pods_Farsight_App_Farsight_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051F280E568B17E60C3661CD /* Pods_Farsight_App_Farsight_AppUITests.framework */; };
-		6E66BD216AC06F769F105DAB /* Pods_Farsight_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C729C3ABD156B611F231302 /* Pods_Farsight_App.framework */; };
-		79E77BE0269CD73000247D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BDF269CD73000247D00 /* AppDelegate.swift */; };
-		79E77BE2269CD73000247D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BE1269CD73000247D00 /* SceneDelegate.swift */; };
-		79E77BE4269CD73000247D00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BE3269CD73000247D00 /* ViewController.swift */; };
-		79E77BE7269CD73000247D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E77BE5269CD73000247D00 /* Main.storyboard */; };
-		79E77BE9269CD73000247D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E77BE8269CD73000247D00 /* Assets.xcassets */; };
-		79E77BEC269CD73000247D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E77BEA269CD73000247D00 /* LaunchScreen.storyboard */; };
-		79E77BF7269CD73100247D00 /* Farsight_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77BF6269CD73100247D00 /* Farsight_AppTests.swift */; };
-		79E77C02269CD73100247D00 /* Farsight_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E77C01269CD73100247D00 /* Farsight_AppUITests.swift */; };
-		DC8A111B4E8C21C26824FBA3 /* Pods_Farsight_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 410A73957D94B1D90A5AC141 /* Pods_Farsight_AppTests.framework */; };
+		790D24DE26AB081B009EA640 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D24DD26AB081B009EA640 /* Actions.swift */; };
+		790D24E026AB0EA2009EA640 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D24DF26AB0EA2009EA640 /* Category.swift */; };
+		790D24E226AB2B66009EA640 /* FSBaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D24E126AB2B66009EA640 /* FSBaseDetailView.swift */; };
+		790D24E426AB4BCD009EA640 /* WorkOrderPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D24E326AB4BCD009EA640 /* WorkOrderPhoto.swift */; };
+		795DF3FA26A8E1A7009012A6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DF3F926A8E1A7009012A6 /* APIManager.swift */; };
+		795DF3FC26A8E1D3009012A6 /* ErrorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DF3FB26A8E1D3009012A6 /* ErrorObject.swift */; };
+		795DF3FE26A8E21F009012A6 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DF3FD26A8E21F009012A6 /* EndPoint.swift */; };
+		795DF40026A8F551009012A6 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DF3FF26A8F551009012A6 /* Config.swift */; };
+		795DF40226A9CF86009012A6 /* WorkOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DF40126A9CF86009012A6 /* WorkOrder.swift */; };
+		795DF40426A9CFA3009012A6 /* WorkOrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DF40326A9CFA3009012A6 /* WorkOrderDetail.swift */; };
+		795DF40A26AA1106009012A6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DF40926AA1106009012A6 /* String.swift */; };
+		795DF40C26AA1478009012A6 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DF40B26AA1478009012A6 /* Functions.swift */; };
+		795DF41026AA2ACD009012A6 /* FSInstructionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795DF40F26AA2ACD009012A6 /* FSInstructionView.xib */; };
+		795DF41626AA5C2E009012A6 /* FSInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795DF41526AA5C2E009012A6 /* FSInstructionView.swift */; };
+		A2AFAC37C57705F7C22129C5 /* Pods_Farsight_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4672EE71F7490EEEB40F7B1D /* Pods_Farsight_App.framework */; };
+		EA065B6526A269D000A48104 /* FSAlertSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065B6426A269D000A48104 /* FSAlertSubmitViewController.swift */; };
+		EA065B6926A2862700A48104 /* FSPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065B6826A2862700A48104 /* FSPhotosView.swift */; };
+		EA065B6B26A2863700A48104 /* FSPhotosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA065B6A26A2863700A48104 /* FSPhotosView.xib */; };
+		EA065B7026A2B7F800A48104 /* FSPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065B6E26A2B7F800A48104 /* FSPhotoCollectionViewCell.swift */; };
+		EA065B7126A2B7F800A48104 /* FSPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA065B6F26A2B7F800A48104 /* FSPhotoCollectionViewCell.xib */; };
+		EA065B7326A2CBD000A48104 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA065B7226A2CBD000A48104 /* UIColor.swift */; };
+		EA84FCE926A1B33900C1723C /* FSSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84FCE826A1B33900C1723C /* FSSurveyViewController.swift */; };
+		EA9F1AB826A15CA5006AE2E8 /* FSAlertAddBidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F1AB726A15CA5006AE2E8 /* FSAlertAddBidViewController.swift */; };
+		EA9F1ABA26A1621C006AE2E8 /* Other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9F1AB926A1621C006AE2E8 /* Other.storyboard */; };
+		EA9F1ABD26A1624A006AE2E8 /* FSAddBidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F1ABC26A1624A006AE2E8 /* FSAddBidViewController.swift */; };
+		EA9F1AC026A16D36006AE2E8 /* FSBidItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9F1ABE26A16D36006AE2E8 /* FSBidItemTableViewCell.swift */; };
+		EA9F1AC126A16D36006AE2E8 /* FSBidItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9F1ABF26A16D36006AE2E8 /* FSBidItemTableViewCell.xib */; };
+		EAD82D5C26A534F800744083 /* BidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD82D5B26A534F800744083 /* BidModel.swift */; };
+		EADA04AF26A3E62100A4CCC4 /* FSAddBidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADA04AE26A3E62100A4CCC4 /* FSAddBidView.swift */; };
+		EADA04B126A3E63300A4CCC4 /* FSAddBidView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADA04B026A3E63300A4CCC4 /* FSAddBidView.xib */; };
+		EADA04B326A407AF00A4CCC4 /* FSSubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADA04B226A407AF00A4CCC4 /* FSSubmitView.swift */; };
+		EADA04B526A407BC00A4CCC4 /* FSSubmitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADA04B426A407BC00A4CCC4 /* FSSubmitView.xib */; };
+		EAF4A81D26A0166A0068CE42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A81C26A0166A0068CE42 /* AppDelegate.swift */; };
+		EAF4A81F26A0166A0068CE42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A81E26A0166A0068CE42 /* SceneDelegate.swift */; };
+		EAF4A82426A0166A0068CE42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF4A82226A0166A0068CE42 /* Main.storyboard */; };
+		EAF4A82626A0166E0068CE42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF4A82526A0166E0068CE42 /* Assets.xcassets */; };
+		EAF4A82926A0166E0068CE42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF4A82726A0166E0068CE42 /* LaunchScreen.storyboard */; };
+		EAF4A83226A021EC0068CE42 /* FSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A83126A021EC0068CE42 /* FSBaseViewController.swift */; };
+		EAF4A83426A022110068CE42 /* FSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A83326A022110068CE42 /* FSHomeViewController.swift */; };
+		EAF4A83826A022920068CE42 /* FSHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A83626A022920068CE42 /* FSHomeTableViewCell.swift */; };
+		EAF4A83926A022920068CE42 /* FSHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF4A83726A022920068CE42 /* FSHomeTableViewCell.xib */; };
+		EAF4A83D26A038030068CE42 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A83C26A038030068CE42 /* UIView.swift */; };
+		EAF4A83F26A0451B0068CE42 /* FSDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A83E26A0451B0068CE42 /* FSDetailViewController.swift */; };
+		EAF4A84126A045B20068CE42 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF4A84026A045B20068CE42 /* AppStoryboard.swift */; };
+		EAF90E3626A130F800B1B711 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF90E3526A130F800B1B711 /* Alert.storyboard */; };
+		EAF90E3A26A1315B00B1B711 /* FSAlertUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF90E3926A1315B00B1B711 /* FSAlertUpdateViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		79E77BF3269CD73100247D00 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79E77BD4269CD73000247D00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79E77BDB269CD73000247D00;
-			remoteInfo = "Farsight App";
-		};
-		79E77BFE269CD73100247D00 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79E77BD4269CD73000247D00 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79E77BDB269CD73000247D00;
-			remoteInfo = "Farsight App";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		051F280E568B17E60C3661CD /* Pods_Farsight_App_Farsight_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farsight_App_Farsight_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1127D3EA1242079E0D0CAA52 /* Pods-Farsight App-Farsight AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App-Farsight AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1418D97F84B18810EC1CD0B7 /* Pods-Farsight AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight AppTests.release.xcconfig"; path = "Target Support Files/Pods-Farsight AppTests/Pods-Farsight AppTests.release.xcconfig"; sourceTree = "<group>"; };
-		1800FA06269FF3010075922C /* JobService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobService.swift; sourceTree = "<group>"; };
-		1800FA10269FF3460075922C /* DTOJobList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOJobList.swift; sourceTree = "<group>"; };
-		1800FA19269FF4110075922C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		1800FA21269FF4910075922C /* JobListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListPresenter.swift; sourceTree = "<group>"; };
-		1800FA28269FF5010075922C /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		1800FA29269FF5010075922C /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
-		1800FA2B269FF5010075922C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		1800FA2D269FF5020075922C /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
-		1800FA38269FF55B0075922C /* IJobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IJobListView.swift; sourceTree = "<group>"; };
-		186B5F7D26A41E89006AB8DC /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
-		186B5F7E26A41E89006AB8DC /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
-		187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoCell.swift; sourceTree = "<group>"; };
-		187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadPhotoCell.xib; sourceTree = "<group>"; };
-		18A2DAE226A75CDD00617415 /* SubmitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitCell.swift; sourceTree = "<group>"; };
-		18A2DAE326A75CDD00617415 /* SubmitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitCell.xib; sourceTree = "<group>"; };
-		18BCEDE126A0CBC000AA2637 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		18D8667326A2EC0700DE16AF /* DTOJobDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOJobDetail.swift; sourceTree = "<group>"; };
-		18D8667826A3115D00DE16AF /* DTOPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOPhotos.swift; sourceTree = "<group>"; };
-		18EAFB0F26A2D2B100314610 /* JobDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewController.swift; sourceTree = "<group>"; };
-		18EAFB1026A2D2B100314610 /* JobDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobDetailViewController.xib; sourceTree = "<group>"; };
-		25B8F45C3EDCC4E05E2B4FE7 /* Pods-Farsight App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App.release.xcconfig"; path = "Target Support Files/Pods-Farsight App/Pods-Farsight App.release.xcconfig"; sourceTree = "<group>"; };
-		410A73957D94B1D90A5AC141 /* Pods_Farsight_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farsight_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AF91A525D27D52D6C097D7D /* Pods-Farsight App-Farsight AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App-Farsight AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6C729C3ABD156B611F231302 /* Pods_Farsight_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farsight_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7397F56BF66F49F6735B5890 /* Pods-Farsight App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App.debug.xcconfig"; path = "Target Support Files/Pods-Farsight App/Pods-Farsight App.debug.xcconfig"; sourceTree = "<group>"; };
-		79E77BDC269CD73000247D00 /* Farsight App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farsight App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79E77BDF269CD73000247D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79E77BE1269CD73000247D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79E77BE3269CD73000247D00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79E77BE6269CD73000247D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		79E77BE8269CD73000247D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		79E77BEB269CD73000247D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		79E77BED269CD73000247D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79E77BF2269CD73100247D00 /* Farsight AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Farsight AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79E77BF6269CD73100247D00 /* Farsight_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farsight_AppTests.swift; sourceTree = "<group>"; };
-		79E77BF8269CD73100247D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79E77BFD269CD73100247D00 /* Farsight AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Farsight AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79E77C01269CD73100247D00 /* Farsight_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farsight_AppUITests.swift; sourceTree = "<group>"; };
-		79E77C03269CD73100247D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B16BD341892751A572B76C6E /* Pods-Farsight AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Farsight AppTests/Pods-Farsight AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4672EE71F7490EEEB40F7B1D /* Pods_Farsight_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farsight_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		790D24DD26AB081B009EA640 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		790D24DF26AB0EA2009EA640 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		790D24E126AB2B66009EA640 /* FSBaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSBaseDetailView.swift; sourceTree = "<group>"; };
+		790D24E326AB4BCD009EA640 /* WorkOrderPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderPhoto.swift; sourceTree = "<group>"; };
+		795DF3F926A8E1A7009012A6 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		795DF3FB26A8E1D3009012A6 /* ErrorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorObject.swift; sourceTree = "<group>"; };
+		795DF3FD26A8E21F009012A6 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		795DF3FF26A8F551009012A6 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		795DF40126A9CF86009012A6 /* WorkOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrder.swift; sourceTree = "<group>"; };
+		795DF40326A9CFA3009012A6 /* WorkOrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderDetail.swift; sourceTree = "<group>"; };
+		795DF40926AA1106009012A6 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		795DF40B26AA1478009012A6 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		795DF40F26AA2ACD009012A6 /* FSInstructionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSInstructionView.xib; sourceTree = "<group>"; };
+		795DF41526AA5C2E009012A6 /* FSInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSInstructionView.swift; sourceTree = "<group>"; };
+		8B6E199019518EF5592EA09B /* Pods-Farsight App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App.release.xcconfig"; path = "Target Support Files/Pods-Farsight App/Pods-Farsight App.release.xcconfig"; sourceTree = "<group>"; };
+		CED412766384AA5592909FB7 /* Pods-Farsight App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Farsight App.debug.xcconfig"; path = "Target Support Files/Pods-Farsight App/Pods-Farsight App.debug.xcconfig"; sourceTree = "<group>"; };
+		EA065B6426A269D000A48104 /* FSAlertSubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSAlertSubmitViewController.swift; sourceTree = "<group>"; };
+		EA065B6826A2862700A48104 /* FSPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSPhotosView.swift; sourceTree = "<group>"; };
+		EA065B6A26A2863700A48104 /* FSPhotosView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSPhotosView.xib; sourceTree = "<group>"; };
+		EA065B6E26A2B7F800A48104 /* FSPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA065B6F26A2B7F800A48104 /* FSPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA065B7226A2CBD000A48104 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		EA84FCE826A1B33900C1723C /* FSSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSSurveyViewController.swift; sourceTree = "<group>"; };
+		EA9F1AB726A15CA5006AE2E8 /* FSAlertAddBidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSAlertAddBidViewController.swift; sourceTree = "<group>"; };
+		EA9F1AB926A1621C006AE2E8 /* Other.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Other.storyboard; sourceTree = "<group>"; };
+		EA9F1ABC26A1624A006AE2E8 /* FSAddBidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSAddBidViewController.swift; sourceTree = "<group>"; };
+		EA9F1ABE26A16D36006AE2E8 /* FSBidItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSBidItemTableViewCell.swift; sourceTree = "<group>"; };
+		EA9F1ABF26A16D36006AE2E8 /* FSBidItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSBidItemTableViewCell.xib; sourceTree = "<group>"; };
+		EAD82D5B26A534F800744083 /* BidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidModel.swift; sourceTree = "<group>"; };
+		EADA04AE26A3E62100A4CCC4 /* FSAddBidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSAddBidView.swift; sourceTree = "<group>"; };
+		EADA04B026A3E63300A4CCC4 /* FSAddBidView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSAddBidView.xib; sourceTree = "<group>"; };
+		EADA04B226A407AF00A4CCC4 /* FSSubmitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSSubmitView.swift; sourceTree = "<group>"; };
+		EADA04B426A407BC00A4CCC4 /* FSSubmitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSSubmitView.xib; sourceTree = "<group>"; };
+		EAF4A81926A0166A0068CE42 /* Farsight App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farsight App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF4A81C26A0166A0068CE42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAF4A81E26A0166A0068CE42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EAF4A82326A0166A0068CE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAF4A82526A0166E0068CE42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAF4A82826A0166E0068CE42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAF4A82A26A0166E0068CE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF4A83126A021EC0068CE42 /* FSBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSBaseViewController.swift; sourceTree = "<group>"; };
+		EAF4A83326A022110068CE42 /* FSHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSHomeViewController.swift; sourceTree = "<group>"; };
+		EAF4A83626A022920068CE42 /* FSHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSHomeTableViewCell.swift; sourceTree = "<group>"; };
+		EAF4A83726A022920068CE42 /* FSHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSHomeTableViewCell.xib; sourceTree = "<group>"; };
+		EAF4A83C26A038030068CE42 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		EAF4A83E26A0451B0068CE42 /* FSDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDetailViewController.swift; sourceTree = "<group>"; };
+		EAF4A84026A045B20068CE42 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		EAF90E3526A130F800B1B711 /* Alert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
+		EAF90E3926A1315B00B1B711 /* FSAlertUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSAlertUpdateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		79E77BD9269CD73000247D00 /* Frameworks */ = {
+		EAF4A81626A0166A0068CE42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E66BD216AC06F769F105DAB /* Pods_Farsight_App.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79E77BEF269CD73100247D00 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC8A111B4E8C21C26824FBA3 /* Pods_Farsight_AppTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79E77BFA269CD73100247D00 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49D2EE835E0AF50985B87C74 /* Pods_Farsight_App_Farsight_AppUITests.framework in Frameworks */,
+				A2AFAC37C57705F7C22129C5 /* Pods_Farsight_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1800FA02269FF2C30075922C /* Service */ = {
+		237F51365E82C07B36778405 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1800FA06269FF3010075922C /* JobService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		1800FA03269FF2CA0075922C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1800FA38269FF55B0075922C /* IJobListView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1800FA04269FF2D30075922C /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				1800FA21269FF4910075922C /* JobListPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		1800FA05269FF2E30075922C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				187F691726A2DBF6005FFE52 /* CustomCells */,
-				18EAFB0E26A2D29D00314610 /* JobDetailViewController */,
-				79E77BE3269CD73000247D00 /* ViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		1800FA0E269FF3300075922C /* DTO */ = {
-			isa = PBXGroup;
-			children = (
-				1800FA10269FF3460075922C /* DTOJobList.swift */,
-				18D8667826A3115D00DE16AF /* DTOPhotos.swift */,
-				18D8667326A2EC0700DE16AF /* DTOJobDetail.swift */,
-			);
-			path = DTO;
-			sourceTree = "<group>";
-		};
-		1800FA18269FF4040075922C /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				1800FA19269FF4110075922C /* Config.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		1800FA26269FF4F70075922C /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				1800FA27269FF5010075922C /* Round Button */,
-				1800FA2A269FF5010075922C /* RoundImage */,
-				1800FA2C269FF5020075922C /* RoundLabel */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		1800FA27269FF5010075922C /* Round Button */ = {
-			isa = PBXGroup;
-			children = (
-				1800FA28269FF5010075922C /* RoundButton.swift */,
-				1800FA29269FF5010075922C /* DesignableView.swift */,
-			);
-			path = "Round Button";
-			sourceTree = "<group>";
-		};
-		1800FA2A269FF5010075922C /* RoundImage */ = {
-			isa = PBXGroup;
-			children = (
-				1800FA2B269FF5010075922C /* UIImageView.swift */,
-			);
-			path = RoundImage;
-			sourceTree = "<group>";
-		};
-		1800FA2C269FF5020075922C /* RoundLabel */ = {
-			isa = PBXGroup;
-			children = (
-				1800FA2D269FF5020075922C /* RoundedLabel.swift */,
-			);
-			path = RoundLabel;
-			sourceTree = "<group>";
-		};
-		187F691726A2DBF6005FFE52 /* CustomCells */ = {
-			isa = PBXGroup;
-			children = (
-				187F691826A2DC1A005FFE52 /* UploadPhotoCell.swift */,
-				187F691926A2DC1A005FFE52 /* UploadPhotoCell.xib */,
-				186B5F7D26A41E89006AB8DC /* GalleryCell.swift */,
-				18A2DAE226A75CDD00617415 /* SubmitCell.swift */,
-				18A2DAE326A75CDD00617415 /* SubmitCell.xib */,
-				186B5F7E26A41E89006AB8DC /* GalleryCell.xib */,
-			);
-			path = CustomCells;
-			sourceTree = "<group>";
-		};
-		18BCEDE026A0CBAF00AA2637 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				18BCEDE126A0CBC000AA2637 /* Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		18EAFB0E26A2D29D00314610 /* JobDetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-				18EAFB0F26A2D2B100314610 /* JobDetailViewController.swift */,
-				18EAFB1026A2D2B100314610 /* JobDetailViewController.xib */,
-			);
-			path = JobDetailViewController;
-			sourceTree = "<group>";
-		};
-		2DAE952D1A0F55786FAF3E08 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6C729C3ABD156B611F231302 /* Pods_Farsight_App.framework */,
-				051F280E568B17E60C3661CD /* Pods_Farsight_App_Farsight_AppUITests.framework */,
-				410A73957D94B1D90A5AC141 /* Pods_Farsight_AppTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3E02BCDC0E076010FF3EC8DC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7397F56BF66F49F6735B5890 /* Pods-Farsight App.debug.xcconfig */,
-				25B8F45C3EDCC4E05E2B4FE7 /* Pods-Farsight App.release.xcconfig */,
-				5AF91A525D27D52D6C097D7D /* Pods-Farsight App-Farsight AppUITests.debug.xcconfig */,
-				1127D3EA1242079E0D0CAA52 /* Pods-Farsight App-Farsight AppUITests.release.xcconfig */,
-				B16BD341892751A572B76C6E /* Pods-Farsight AppTests.debug.xcconfig */,
-				1418D97F84B18810EC1CD0B7 /* Pods-Farsight AppTests.release.xcconfig */,
+				CED412766384AA5592909FB7 /* Pods-Farsight App.debug.xcconfig */,
+				8B6E199019518EF5592EA09B /* Pods-Farsight App.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		79E77BD3269CD73000247D00 = {
+		491C6AC8954BA259E024EF8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				79E77BDE269CD73000247D00 /* Farsight App */,
-				79E77BF5269CD73100247D00 /* Farsight AppTests */,
-				79E77C00269CD73100247D00 /* Farsight AppUITests */,
-				79E77BDD269CD73000247D00 /* Products */,
-				3E02BCDC0E076010FF3EC8DC /* Pods */,
-				2DAE952D1A0F55786FAF3E08 /* Frameworks */,
+				4672EE71F7490EEEB40F7B1D /* Pods_Farsight_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		795DF3F826A8DFAC009012A6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				795DF3F926A8E1A7009012A6 /* APIManager.swift */,
+				795DF3FB26A8E1D3009012A6 /* ErrorObject.swift */,
+				795DF3FD26A8E21F009012A6 /* EndPoint.swift */,
+				795DF3FF26A8F551009012A6 /* Config.swift */,
+				795DF40B26AA1478009012A6 /* Functions.swift */,
+				790D24DD26AB081B009EA640 /* Actions.swift */,
+				790D24DF26AB0EA2009EA640 /* Category.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EA065B6626A2850000A48104 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA065B6726A2851D00A48104 /* CustomView */,
+				EAF4A83526A022740068CE42 /* Cell */,
+				EAF4A83026A021C10068CE42 /* ViewController */,
+				EAF90E3426A130B700B1B711 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA065B6726A2851D00A48104 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EA065B6826A2862700A48104 /* FSPhotosView.swift */,
+				EA065B6A26A2863700A48104 /* FSPhotosView.xib */,
+				EADA04AE26A3E62100A4CCC4 /* FSAddBidView.swift */,
+				EADA04B026A3E63300A4CCC4 /* FSAddBidView.xib */,
+				EADA04B226A407AF00A4CCC4 /* FSSubmitView.swift */,
+				EADA04B426A407BC00A4CCC4 /* FSSubmitView.xib */,
+				795DF40F26AA2ACD009012A6 /* FSInstructionView.xib */,
+				795DF41526AA5C2E009012A6 /* FSInstructionView.swift */,
+				790D24E126AB2B66009EA640 /* FSBaseDetailView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		EA065B6C26A2B7C600A48104 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4A83726A022920068CE42 /* FSHomeTableViewCell.xib */,
+				EAF4A83626A022920068CE42 /* FSHomeTableViewCell.swift */,
+				EA9F1ABE26A16D36006AE2E8 /* FSBidItemTableViewCell.swift */,
+				EA9F1ABF26A16D36006AE2E8 /* FSBidItemTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		EA065B6D26A2B7D800A48104 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA065B6E26A2B7F800A48104 /* FSPhotoCollectionViewCell.swift */,
+				EA065B6F26A2B7F800A48104 /* FSPhotoCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		EA9F1ABB26A16231006AE2E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EA9F1ABC26A1624A006AE2E8 /* FSAddBidViewController.swift */,
+				EA84FCE826A1B33900C1723C /* FSSurveyViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EAD82D5A26A534DC00744083 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAD82D5B26A534F800744083 /* BidModel.swift */,
+				795DF40126A9CF86009012A6 /* WorkOrder.swift */,
+				795DF40326A9CFA3009012A6 /* WorkOrderDetail.swift */,
+				790D24E326AB4BCD009EA640 /* WorkOrderPhoto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAF4A81026A0166A0068CE42 = {
+			isa = PBXGroup;
+			children = (
+				EAF4A81B26A0166A0068CE42 /* Farsight App */,
+				EAF4A81A26A0166A0068CE42 /* Products */,
+				237F51365E82C07B36778405 /* Pods */,
+				491C6AC8954BA259E024EF8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		79E77BDD269CD73000247D00 /* Products */ = {
+		EAF4A81A26A0166A0068CE42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79E77BDC269CD73000247D00 /* Farsight App.app */,
-				79E77BF2269CD73100247D00 /* Farsight AppTests.xctest */,
-				79E77BFD269CD73100247D00 /* Farsight AppUITests.xctest */,
+				EAF4A81926A0166A0068CE42 /* Farsight App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		79E77BDE269CD73000247D00 /* Farsight App */ = {
+		EAF4A81B26A0166A0068CE42 /* Farsight App */ = {
 			isa = PBXGroup;
 			children = (
-				18BCEDE026A0CBAF00AA2637 /* Extensions */,
-				1800FA26269FF4F70075922C /* Helper */,
-				1800FA18269FF4040075922C /* Config */,
-				1800FA0E269FF3300075922C /* DTO */,
-				1800FA05269FF2E30075922C /* Controller */,
-				1800FA04269FF2D30075922C /* Presenter */,
-				1800FA03269FF2CA0075922C /* View */,
-				1800FA02269FF2C30075922C /* Service */,
-				79E77BDF269CD73000247D00 /* AppDelegate.swift */,
-				79E77BE1269CD73000247D00 /* SceneDelegate.swift */,
-				79E77BE5269CD73000247D00 /* Main.storyboard */,
-				79E77BE8269CD73000247D00 /* Assets.xcassets */,
-				79E77BEA269CD73000247D00 /* LaunchScreen.storyboard */,
-				79E77BED269CD73000247D00 /* Info.plist */,
+				795DF3F826A8DFAC009012A6 /* Helpers */,
+				EAD82D5A26A534DC00744083 /* Model */,
+				EAF4A81C26A0166A0068CE42 /* AppDelegate.swift */,
+				EAF4A81E26A0166A0068CE42 /* SceneDelegate.swift */,
+				EA065B6626A2850000A48104 /* View */,
+				EAF4A83A26A037E30068CE42 /* Resources */,
+				EAF4A82A26A0166E0068CE42 /* Info.plist */,
 			);
 			path = "Farsight App";
 			sourceTree = "<group>";
 		};
-		79E77BF5269CD73100247D00 /* Farsight AppTests */ = {
+		EAF4A83026A021C10068CE42 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				79E77BF6269CD73100247D00 /* Farsight_AppTests.swift */,
-				79E77BF8269CD73100247D00 /* Info.plist */,
+				EA9F1ABB26A16231006AE2E8 /* Other */,
+				EAF90E3826A1313400B1B711 /* Alert */,
+				EAF90E3726A1312600B1B711 /* Home */,
+				EAF4A83126A021EC0068CE42 /* FSBaseViewController.swift */,
 			);
-			path = "Farsight AppTests";
+			path = ViewController;
 			sourceTree = "<group>";
 		};
-		79E77C00269CD73100247D00 /* Farsight AppUITests */ = {
+		EAF4A83526A022740068CE42 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				79E77C01269CD73100247D00 /* Farsight_AppUITests.swift */,
-				79E77C03269CD73100247D00 /* Info.plist */,
+				EA065B6D26A2B7D800A48104 /* CollectionViewCell */,
+				EA065B6C26A2B7C600A48104 /* TableViewCell */,
 			);
-			path = "Farsight AppUITests";
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EAF4A83A26A037E30068CE42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4A82526A0166E0068CE42 /* Assets.xcassets */,
+				EAF4A83B26A037F60068CE42 /* Extentions */,
+				EAF4A84026A045B20068CE42 /* AppStoryboard.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAF4A83B26A037F60068CE42 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4A83C26A038030068CE42 /* UIView.swift */,
+				EA065B7226A2CBD000A48104 /* UIColor.swift */,
+				795DF40926AA1106009012A6 /* String.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		EAF90E3426A130B700B1B711 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4A82226A0166A0068CE42 /* Main.storyboard */,
+				EAF90E3526A130F800B1B711 /* Alert.storyboard */,
+				EA9F1AB926A1621C006AE2E8 /* Other.storyboard */,
+				EAF4A82726A0166E0068CE42 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EAF90E3726A1312600B1B711 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EAF4A83326A022110068CE42 /* FSHomeViewController.swift */,
+				EAF4A83E26A0451B0068CE42 /* FSDetailViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EAF90E3826A1313400B1B711 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				EAF90E3926A1315B00B1B711 /* FSAlertUpdateViewController.swift */,
+				EA9F1AB726A15CA5006AE2E8 /* FSAlertAddBidViewController.swift */,
+				EA065B6426A269D000A48104 /* FSAlertSubmitViewController.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79E77BDB269CD73000247D00 /* Farsight App */ = {
+		EAF4A81826A0166A0068CE42 /* Farsight App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79E77C06269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight App" */;
+			buildConfigurationList = EAF4A82D26A0166E0068CE42 /* Build configuration list for PBXNativeTarget "Farsight App" */;
 			buildPhases = (
-				CD30B09665ED0C41C444A69E /* [CP] Check Pods Manifest.lock */,
-				79E77BD8269CD73000247D00 /* Sources */,
-				79E77BD9269CD73000247D00 /* Frameworks */,
-				79E77BDA269CD73000247D00 /* Resources */,
-				88817E92DDB9AC471FD9FC02 /* [CP] Embed Pods Frameworks */,
+				D2F17E31936D394A27FA7F39 /* [CP] Check Pods Manifest.lock */,
+				EAF4A81526A0166A0068CE42 /* Sources */,
+				EAF4A81626A0166A0068CE42 /* Frameworks */,
+				EAF4A81726A0166A0068CE42 /* Resources */,
+				1A4C6DCE407370A2F1DA44E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Farsight App";
-			productName = "Farsight App";
-			productReference = 79E77BDC269CD73000247D00 /* Farsight App.app */;
+			productName = FarSight;
+			productReference = EAF4A81926A0166A0068CE42 /* Farsight App.app */;
 			productType = "com.apple.product-type.application";
-		};
-		79E77BF1269CD73100247D00 /* Farsight AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79E77C09269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppTests" */;
-			buildPhases = (
-				800B2CEAACCB6E3B1ECEFBAD /* [CP] Check Pods Manifest.lock */,
-				79E77BEE269CD73100247D00 /* Sources */,
-				79E77BEF269CD73100247D00 /* Frameworks */,
-				79E77BF0269CD73100247D00 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79E77BF4269CD73100247D00 /* PBXTargetDependency */,
-			);
-			name = "Farsight AppTests";
-			productName = "Farsight AppTests";
-			productReference = 79E77BF2269CD73100247D00 /* Farsight AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		79E77BFC269CD73100247D00 /* Farsight AppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79E77C0C269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppUITests" */;
-			buildPhases = (
-				7C6D86795B5DC8A68A824782 /* [CP] Check Pods Manifest.lock */,
-				79E77BF9269CD73100247D00 /* Sources */,
-				79E77BFA269CD73100247D00 /* Frameworks */,
-				79E77BFB269CD73100247D00 /* Resources */,
-				3B34D5AC0C21EF134A2D9AC6 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79E77BFF269CD73100247D00 /* PBXTargetDependency */,
-			);
-			name = "Farsight AppUITests";
-			productName = "Farsight AppUITests";
-			productReference = 79E77BFD269CD73100247D00 /* Farsight AppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		79E77BD4269CD73000247D00 /* Project object */ = {
+		EAF4A81126A0166A0068CE42 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					79E77BDB269CD73000247D00 = {
+					EAF4A81826A0166A0068CE42 = {
 						CreatedOnToolsVersion = 12.5.1;
-					};
-					79E77BF1269CD73100247D00 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 79E77BDB269CD73000247D00;
-					};
-					79E77BFC269CD73100247D00 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 79E77BDB269CD73000247D00;
 					};
 				};
 			};
-			buildConfigurationList = 79E77BD7269CD73000247D00 /* Build configuration list for PBXProject "Farsight App" */;
+			buildConfigurationList = EAF4A81426A0166A0068CE42 /* Build configuration list for PBXProject "Farsight App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -423,112 +364,40 @@
 				en,
 				Base,
 			);
-			mainGroup = 79E77BD3269CD73000247D00;
-			productRefGroup = 79E77BDD269CD73000247D00 /* Products */;
+			mainGroup = EAF4A81026A0166A0068CE42;
+			productRefGroup = EAF4A81A26A0166A0068CE42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79E77BDB269CD73000247D00 /* Farsight App */,
-				79E77BF1269CD73100247D00 /* Farsight AppTests */,
-				79E77BFC269CD73100247D00 /* Farsight AppUITests */,
+				EAF4A81826A0166A0068CE42 /* Farsight App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		79E77BDA269CD73000247D00 /* Resources */ = {
+		EAF4A81726A0166A0068CE42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E77BEC269CD73000247D00 /* LaunchScreen.storyboard in Resources */,
-				18EAFB1226A2D2B100314610 /* JobDetailViewController.xib in Resources */,
-				79E77BE9269CD73000247D00 /* Assets.xcassets in Resources */,
-				79E77BE7269CD73000247D00 /* Main.storyboard in Resources */,
-				186B5F8026A41E89006AB8DC /* GalleryCell.xib in Resources */,
-				18A2DAE526A75CDD00617415 /* SubmitCell.xib in Resources */,
-				187F691B26A2DC1A005FFE52 /* UploadPhotoCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79E77BF0269CD73100247D00 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79E77BFB269CD73100247D00 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				EAF4A82926A0166E0068CE42 /* LaunchScreen.storyboard in Resources */,
+				EAF90E3626A130F800B1B711 /* Alert.storyboard in Resources */,
+				EA065B6B26A2863700A48104 /* FSPhotosView.xib in Resources */,
+				EAF4A83926A022920068CE42 /* FSHomeTableViewCell.xib in Resources */,
+				EAF4A82626A0166E0068CE42 /* Assets.xcassets in Resources */,
+				EADA04B126A3E63300A4CCC4 /* FSAddBidView.xib in Resources */,
+				EADA04B526A407BC00A4CCC4 /* FSSubmitView.xib in Resources */,
+				EA9F1AC126A16D36006AE2E8 /* FSBidItemTableViewCell.xib in Resources */,
+				795DF41026AA2ACD009012A6 /* FSInstructionView.xib in Resources */,
+				EAF4A82426A0166A0068CE42 /* Main.storyboard in Resources */,
+				EA9F1ABA26A1621C006AE2E8 /* Other.storyboard in Resources */,
+				EA065B7126A2B7F800A48104 /* FSPhotoCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3B34D5AC0C21EF134A2D9AC6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Farsight App-Farsight AppUITests/Pods-Farsight App-Farsight AppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C6D86795B5DC8A68A824782 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Farsight App-Farsight AppUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		800B2CEAACCB6E3B1ECEFBAD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Farsight AppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88817E92DDB9AC471FD9FC02 /* [CP] Embed Pods Frameworks */ = {
+		1A4C6DCE407370A2F1DA44E9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -545,7 +414,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Farsight App/Pods-Farsight App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CD30B09665ED0C41C444A69E /* [CP] Check Pods Manifest.lock */ = {
+		D2F17E31936D394A27FA7F39 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -570,76 +439,61 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		79E77BD8269CD73000247D00 /* Sources */ = {
+		EAF4A81526A0166A0068CE42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1800FA2E269FF5020075922C /* RoundButton.swift in Sources */,
-				18D8667926A3115D00DE16AF /* DTOPhotos.swift in Sources */,
-				1800FA11269FF3460075922C /* DTOJobList.swift in Sources */,
-				18D8667426A2EC0700DE16AF /* DTOJobDetail.swift in Sources */,
-				1800FA22269FF4910075922C /* JobListPresenter.swift in Sources */,
-				79E77BE4269CD73000247D00 /* ViewController.swift in Sources */,
-				79E77BE0269CD73000247D00 /* AppDelegate.swift in Sources */,
-				79E77BE2269CD73000247D00 /* SceneDelegate.swift in Sources */,
-				1800FA31269FF5020075922C /* RoundedLabel.swift in Sources */,
-				1800FA39269FF55B0075922C /* IJobListView.swift in Sources */,
-				1800FA30269FF5020075922C /* UIImageView.swift in Sources */,
-				18EAFB1126A2D2B100314610 /* JobDetailViewController.swift in Sources */,
-				186B5F7F26A41E89006AB8DC /* GalleryCell.swift in Sources */,
-				18A2DAE426A75CDD00617415 /* SubmitCell.swift in Sources */,
-				18BCEDE226A0CBC000AA2637 /* Extension.swift in Sources */,
-				187F691A26A2DC1A005FFE52 /* UploadPhotoCell.swift in Sources */,
-				1800FA07269FF3010075922C /* JobService.swift in Sources */,
-				1800FA1A269FF4110075922C /* Config.swift in Sources */,
-				1800FA2F269FF5020075922C /* DesignableView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79E77BEE269CD73100247D00 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79E77BF7269CD73100247D00 /* Farsight_AppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79E77BF9269CD73100247D00 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79E77C02269CD73100247D00 /* Farsight_AppUITests.swift in Sources */,
+				EADA04B326A407AF00A4CCC4 /* FSSubmitView.swift in Sources */,
+				EA065B6926A2862700A48104 /* FSPhotosView.swift in Sources */,
+				EA065B6526A269D000A48104 /* FSAlertSubmitViewController.swift in Sources */,
+				790D24E026AB0EA2009EA640 /* Category.swift in Sources */,
+				795DF40A26AA1106009012A6 /* String.swift in Sources */,
+				795DF40C26AA1478009012A6 /* Functions.swift in Sources */,
+				EAF4A84126A045B20068CE42 /* AppStoryboard.swift in Sources */,
+				EA84FCE926A1B33900C1723C /* FSSurveyViewController.swift in Sources */,
+				795DF40026A8F551009012A6 /* Config.swift in Sources */,
+				EA065B7026A2B7F800A48104 /* FSPhotoCollectionViewCell.swift in Sources */,
+				795DF3FA26A8E1A7009012A6 /* APIManager.swift in Sources */,
+				EA9F1AC026A16D36006AE2E8 /* FSBidItemTableViewCell.swift in Sources */,
+				EA065B7326A2CBD000A48104 /* UIColor.swift in Sources */,
+				EA9F1ABD26A1624A006AE2E8 /* FSAddBidViewController.swift in Sources */,
+				EAD82D5C26A534F800744083 /* BidModel.swift in Sources */,
+				EAF4A81D26A0166A0068CE42 /* AppDelegate.swift in Sources */,
+				790D24DE26AB081B009EA640 /* Actions.swift in Sources */,
+				EA9F1AB826A15CA5006AE2E8 /* FSAlertAddBidViewController.swift in Sources */,
+				EAF4A83826A022920068CE42 /* FSHomeTableViewCell.swift in Sources */,
+				EAF4A83226A021EC0068CE42 /* FSBaseViewController.swift in Sources */,
+				790D24E226AB2B66009EA640 /* FSBaseDetailView.swift in Sources */,
+				EAF4A83426A022110068CE42 /* FSHomeViewController.swift in Sources */,
+				EAF4A83D26A038030068CE42 /* UIView.swift in Sources */,
+				795DF3FC26A8E1D3009012A6 /* ErrorObject.swift in Sources */,
+				EAF90E3A26A1315B00B1B711 /* FSAlertUpdateViewController.swift in Sources */,
+				795DF40226A9CF86009012A6 /* WorkOrder.swift in Sources */,
+				790D24E426AB4BCD009EA640 /* WorkOrderPhoto.swift in Sources */,
+				EADA04AF26A3E62100A4CCC4 /* FSAddBidView.swift in Sources */,
+				795DF40426A9CFA3009012A6 /* WorkOrderDetail.swift in Sources */,
+				795DF3FE26A8E21F009012A6 /* EndPoint.swift in Sources */,
+				EAF4A83F26A0451B0068CE42 /* FSDetailViewController.swift in Sources */,
+				795DF41626AA5C2E009012A6 /* FSInstructionView.swift in Sources */,
+				EAF4A81F26A0166A0068CE42 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		79E77BF4269CD73100247D00 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79E77BDB269CD73000247D00 /* Farsight App */;
-			targetProxy = 79E77BF3269CD73100247D00 /* PBXContainerItemProxy */;
-		};
-		79E77BFF269CD73100247D00 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79E77BDB269CD73000247D00 /* Farsight App */;
-			targetProxy = 79E77BFE269CD73100247D00 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		79E77BE5269CD73000247D00 /* Main.storyboard */ = {
+		EAF4A82226A0166A0068CE42 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				79E77BE6269CD73000247D00 /* Base */,
+				EAF4A82326A0166A0068CE42 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		79E77BEA269CD73000247D00 /* LaunchScreen.storyboard */ = {
+		EAF4A82726A0166E0068CE42 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				79E77BEB269CD73000247D00 /* Base */,
+				EAF4A82826A0166E0068CE42 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -647,7 +501,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		79E77C04269CD73100247D00 /* Debug */ = {
+		EAF4A82B26A0166E0068CE42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -708,7 +562,7 @@
 			};
 			name = Debug;
 		};
-		79E77C05269CD73100247D00 /* Release */ = {
+		EAF4A82C26A0166E0068CE42 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -763,15 +617,15 @@
 			};
 			name = Release;
 		};
-		79E77C07269CD73100247D00 /* Debug */ = {
+		EAF4A82E26A0166E0068CE42 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7397F56BF66F49F6735B5890 /* Pods-Farsight App.debug.xcconfig */;
+			baseConfigurationReference = CED412766384AA5592909FB7 /* Pods-Farsight App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LUQ8MLPFL;
-				INFOPLIST_FILE = "Farsight App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Farsight App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -780,19 +634,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NorthSight.FarSightMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		79E77C08269CD73100247D00 /* Release */ = {
+		EAF4A82F26A0166E0068CE42 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25B8F45C3EDCC4E05E2B4FE7 /* Pods-Farsight App.release.xcconfig */;
+			baseConfigurationReference = 8B6E199019518EF5592EA09B /* Pods-Farsight App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LUQ8MLPFL;
-				INFOPLIST_FILE = "Farsight App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Farsight App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -801,134 +655,32 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NorthSight.FarSightMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		79E77C0A269CD73100247D00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B16BD341892751A572B76C6E /* Pods-Farsight AppTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Farsight AppTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "NorthSight.Farsight-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farsight App.app/Farsight App";
-			};
-			name = Debug;
-		};
-		79E77C0B269CD73100247D00 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1418D97F84B18810EC1CD0B7 /* Pods-Farsight AppTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Farsight AppTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "NorthSight.Farsight-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Farsight App.app/Farsight App";
-			};
-			name = Release;
-		};
-		79E77C0D269CD73100247D00 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AF91A525D27D52D6C097D7D /* Pods-Farsight App-Farsight AppUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Farsight AppUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "NorthSight.Farsight-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Farsight App";
-			};
-			name = Debug;
-		};
-		79E77C0E269CD73100247D00 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1127D3EA1242079E0D0CAA52 /* Pods-Farsight App-Farsight AppUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Farsight AppUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "NorthSight.Farsight-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Farsight App";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79E77BD7269CD73000247D00 /* Build configuration list for PBXProject "Farsight App" */ = {
+		EAF4A81426A0166A0068CE42 /* Build configuration list for PBXProject "Farsight App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79E77C04269CD73100247D00 /* Debug */,
-				79E77C05269CD73100247D00 /* Release */,
+				EAF4A82B26A0166E0068CE42 /* Debug */,
+				EAF4A82C26A0166E0068CE42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79E77C06269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight App" */ = {
+		EAF4A82D26A0166E0068CE42 /* Build configuration list for PBXNativeTarget "Farsight App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79E77C07269CD73100247D00 /* Debug */,
-				79E77C08269CD73100247D00 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79E77C09269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79E77C0A269CD73100247D00 /* Debug */,
-				79E77C0B269CD73100247D00 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79E77C0C269CD73100247D00 /* Build configuration list for PBXNativeTarget "Farsight AppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79E77C0D269CD73100247D00 /* Debug */,
-				79E77C0E269CD73100247D00 /* Release */,
+				EAF4A82E26A0166E0068CE42 /* Debug */,
+				EAF4A82F26A0166E0068CE42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 79E77BD4269CD73000247D00 /* Project object */;
+	rootObject = EAF4A81126A0166A0068CE42 /* Project object */;
 }
