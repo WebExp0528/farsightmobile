@@ -46,6 +46,7 @@ class APIManager {
         if progress {
             self.showLoader()
         }
+
         AF.request(type.url, method: type.httpMethod, parameters: params, encoding: type.encoding, headers: type.headers).validate().responseDecodable(of: T.self) { (response) in
             if progress {
                 self.hideLoader()
@@ -63,19 +64,18 @@ class APIManager {
         }
     }
     
-    func uploadMultipart(type: EndPointType, params: Parameters, handler: @escaping (JSON?, Error?)->()) {
-        
+    func uploadPhoto(type: EndPointType, params: Parameters, handler: @escaping (JSON?, JSON?)->()) {
+        print("\(type.baseURL) \(type.httpMethod) \(type.url) \(type.encoding) \(type.headers)")
         AF.upload(multipartFormData: { (multipartFormData) in
-            
             for (key, value) in params {
-                multipartFormData.append((value as! String).data(using: String.Encoding.utf8)!, withName: key)
+                multipartFormData.append((value as! String).data(using: .utf8, allowLossyConversion: false)!, withName: key)
             }
-            
+            print(multipartFormData)
         },to: type.url,
         usingThreshold: UInt64.init(),
         method: type.httpMethod,
         headers: type.headers).response{ response in
-            
+            print(response.response?.statusCode)
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
@@ -83,11 +83,33 @@ class APIManager {
                 break
                 
             case .failure(let error):
-                print(error)
-                handler(nil ,NSError() as Error)
+                
+                handler(nil , JSON(error))
                 break
             }
         }
+    }
+    
+    func uploadPhoto(type: EndPointType, multipart: MultipartFormData, handler: @escaping (JSON?, JSON?)->()) {
+        print("\(type.baseURL) \(type.httpMethod) \(type.url) \(type.encoding) \(type.headers)")
+        
+        AF.upload(multipartFormData: multipart,to: type.url,
+                  usingThreshold: UInt64.init(),
+                  method: type.httpMethod,
+                  headers: type.headers).response{ response in
+                    print(response.response?.statusCode)
+                    switch response.result {
+                    case .success(let value):
+                        let json = JSON(value)
+                        handler(json, nil)
+                        break
+                        
+                    case .failure(let error):
+                        
+                        handler(nil , JSON(error))
+                        break
+                    }
+                  }
     }
     
     func showLoader() {

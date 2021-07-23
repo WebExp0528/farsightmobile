@@ -132,7 +132,6 @@ extension FSDetailViewController {
     }
     
     private func setupContentView() {
-        print("Setup ContentView \(actionType.tag)")
         let subView = actionType.view
         subView.removeFromSuperview()
         subView.workOrderDetail = self.workOrderDetail

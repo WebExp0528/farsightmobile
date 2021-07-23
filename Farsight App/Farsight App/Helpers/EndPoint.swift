@@ -30,7 +30,7 @@ enum EndpointItem {
     case getWorkOrderDetail(_: String)
     case updateWorkOrderDetail(_: String)
     case getWorkOrderPhotos(_: String)
-    
+    case uploadPhoto(_: String)
 }
 
 // MARK: - Extensions
@@ -60,12 +60,14 @@ extension EndpointItem: EndPointType {
             return "/api/work_order/\(id)"
         case .getWorkOrderPhotos(let id):
             return "/api/work_order/\(id)/photo"
+        case .uploadPhoto(let id):
+            return "/api/work_order/\(id)/photo"
         }
     }
     
     var httpMethod: HTTPMethod {
         switch self {
-        case .updateWorkOrderDetail(_):
+        case .updateWorkOrderDetail(_),.uploadPhoto(_):
             return .post
         default:
             return .get

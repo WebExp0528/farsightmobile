@@ -49,7 +49,6 @@ extension FSHomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FSHomeTableViewCell", for: indexPath) as! FSHomeTableViewCell
-        print(indexPath)
         cell.setWorkOrder(data: self.workOrders![indexPath.row])
         return cell
     }

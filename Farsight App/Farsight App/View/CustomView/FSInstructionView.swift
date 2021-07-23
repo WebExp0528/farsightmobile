@@ -27,7 +27,6 @@ class FSInstructionView: FSBaseDetailView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [ .flexibleHeight, .flexibleWidth]
-        print("loaded insturctions")
     }
     
     override func onChangedDetail() {

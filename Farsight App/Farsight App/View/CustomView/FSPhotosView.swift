@@ -7,8 +7,11 @@
 
 import UIKit
 import Photos
-import BSImagePicker
+import YPImagePicker
 import SDWebImage
+import SwiftyJSON
+import Alamofire
+
 
 class FSPhotosView: FSBaseDetailView {
     @IBOutlet var contentView: UIView!
@@ -17,6 +20,14 @@ class FSPhotosView: FSBaseDetailView {
     @IBOutlet weak var photoCollection: UICollectionView!
     @IBOutlet weak var uploadPhotoButton: UIButton!
     @IBOutlet weak var infoLabel: UILabel!
+    
+    var config = YPImagePickerConfiguration()
+    
+    private var seletedImages : [YPMediaItem] = [] {
+        didSet{
+            onSelectedImages()
+        }
+    }
     
     private var listImage : [String] = [] {
         didSet {
@@ -30,7 +41,6 @@ class FSPhotosView: FSBaseDetailView {
         }
     }
     
-    private var imagePicker = ImagePickerController()
     private var topVC = UIViewController()
     
     override init(frame: CGRect) {
@@ -49,6 +59,35 @@ class FSPhotosView: FSBaseDetailView {
         contentView.frame = self.bounds
         contentView.autoresizingMask = [ .flexibleHeight, .flexibleWidth]
         setupCollectionView()
+        
+        
+        config.isScrollToChangeModesEnabled = true
+        config.onlySquareImagesFromCamera = true
+        config.usesFrontCamera = false
+        config.showsPhotoFilters = false
+        config.showsVideoTrimmer = false
+        config.shouldSaveNewPicturesToAlbum = true
+        config.albumName = "DefaultYPImagePickerAlbumName"
+        config.startOnScreen = YPPickerScreen.photo
+        config.screens = [.library, .photo]
+        config.showsCrop = .none
+        config.targetImageSize = YPImageSize.original
+        config.overlayView = UIView()
+        config.hidesStatusBar = true
+        config.hidesBottomBar = false
+        config.hidesCancelButton = false
+        config.library.options = nil
+        config.library.onlySquare = false
+        config.library.isSquareByDefault = true
+        config.library.minWidthForItem = nil
+        config.library.mediaType = YPlibraryMediaType.photo
+        config.library.defaultMultipleSelection = true
+        config.library.maxNumberOfItems = 10
+        config.library.minNumberOfItems = 1
+        config.library.numberOfItemsInRow = 4
+        config.library.spacingBetweenItems = 1.0
+        config.library.skipSelectionsGallery = false
+        config.library.preselectedItems = nil
     }
     
     override func onChangedDetail() {
@@ -67,7 +106,16 @@ class FSPhotosView: FSBaseDetailView {
     
     @IBAction func onTapUploadPhotoButton(_ sender: UIButton) {
         print("Clicked upload button")
-        
+        guard let vc = UIApplication.getTopViewController() else { return }
+        topVC = vc
+        let picker = YPImagePicker(configuration: self.config)
+        picker.didFinishPicking { [unowned picker] items, cancelled in
+            if (!cancelled) {
+                self.seletedImages = items
+            }
+            picker.dismiss(animated: true, completion: nil)
+        }
+        topVC.present(picker, animated: true, completion: nil)
     }
 }
 
@@ -77,16 +125,6 @@ extension FSPhotosView {
         photoCollection.isHidden = listImage.count == 0
         infoLabel.isHidden = listImage.count > 0
         photoCollection.reloadData()
-//        switch category {
-//        case , .AfterPhotos:
-//            skipButton.isHidden = listImage.count == 0
-//            let title = listImage.count == 0 ? "Upload Photo" : "Upload More Photos"
-//            uploadPhotoButton.setTitle(title, for: .normal)
-//        case .DuringPhotos:
-//            skipButton.isHidden = false
-//        default:
-//            break
-//        }
     }
     
     private func onChangedCategory() {
@@ -108,6 +146,55 @@ extension FSPhotosView {
         photoCollection.register(UINib(nibName: "FSPhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FSPhotoCollectionViewCell")
         photoCollection.delegate = self
         photoCollection.dataSource = self
+    }
+    
+    func onSelectedImages() {
+        print("Seleted Images")
+        
+        for item in self.seletedImages {
+            switch item {
+            case .photo(let photo):
+//                let param = [
+//                    "evidenceType": "photo",
+//                    "fileExt":"jpeg",
+//                    "fileName":"Test",
+//                    "fileType": "picture",
+//                    "timestamp":"null",
+//                    "gpsAccuracy":"null",
+//                    "gpsLatitude":"null",
+//                    "gpsLongitude":"null",
+//                    "gpsTimestamp":"null",
+//                    "parentUuid":"null",
+//                    "uuid":UUID().uuidString,
+//                    "imageLabel": self.category.id,
+//                    "file": self.convertImageToBase64(image: photo.image)
+//                ] as [String : Any]
+                
+                let multipartFormData = MultipartFormData()
+                multipartFormData.append("photo".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("jpeg".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("Test".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("picture".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append(UUID().uuidString.data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append(self.category.id.data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append(self.convertImageToBase64(image: photo.image)!, withName: "file")
+                
+                print(multipartFormData)
+                
+                APIManager.shared().uploadPhoto(type: EndpointItem.uploadPhoto((self.workOrderDetail?.won)!), multipart: multipartFormData){(data:JSON?, error) in
+                    print("Ended upload \(data) \(error)")
+                }
+                break
+            case .video(v: _):
+                break
+            }
+        }
     }
 }
 
@@ -141,5 +228,13 @@ extension FSPhotosView : UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 15
+    }
+    
+    func convertImageToBase64(image: UIImage) -> Data? {
+        let imageData: Data? = image.jpegData(compressionQuality: 0.4)
+        // let imageData = image.pngData()!
+//        let imageDataURI = imageData!.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
+//        print("Converted image data => \(imageDataURI)")
+        return imageData
     }
 }
