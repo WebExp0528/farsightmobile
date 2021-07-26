@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790A201A26AF557B00F37877 /* MD5File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790A201926AF557B00F37877 /* MD5File.swift */; };
 		790D24DE26AB081B009EA640 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D24DD26AB081B009EA640 /* Actions.swift */; };
 		790D24E026AB0EA2009EA640 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D24DF26AB0EA2009EA640 /* Category.swift */; };
 		790D24E226AB2B66009EA640 /* FSBaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D24E126AB2B66009EA640 /* FSBaseDetailView.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		4672EE71F7490EEEB40F7B1D /* Pods_Farsight_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Farsight_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		790A201926AF557B00F37877 /* MD5File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5File.swift; sourceTree = "<group>"; };
 		790D24DD26AB081B009EA640 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		790D24DF26AB0EA2009EA640 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		790D24E126AB2B66009EA640 /* FSBaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSBaseDetailView.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				795DF40B26AA1478009012A6 /* Functions.swift */,
 				790D24DD26AB081B009EA640 /* Actions.swift */,
 				790D24DF26AB0EA2009EA640 /* Category.swift */,
+				790A201926AF557B00F37877 /* MD5File.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				EA9F1ABD26A1624A006AE2E8 /* FSAddBidViewController.swift in Sources */,
 				EAD82D5C26A534F800744083 /* BidModel.swift in Sources */,
 				EAF4A81D26A0166A0068CE42 /* AppDelegate.swift in Sources */,
+				790A201A26AF557B00F37877 /* MD5File.swift in Sources */,
 				790D24DE26AB081B009EA640 /* Actions.swift in Sources */,
 				EA9F1AB826A15CA5006AE2E8 /* FSAlertAddBidViewController.swift in Sources */,
 				EAF4A83826A022920068CE42 /* FSHomeTableViewCell.swift in Sources */,

@@ -65,7 +65,6 @@ class APIManager {
     }
     
     func uploadPhoto(type: EndPointType, params: Parameters, handler: @escaping (JSON?, JSON?)->()) {
-        print("\(type.baseURL) \(type.httpMethod) \(type.url) \(type.encoding) \(type.headers)")
         AF.upload(multipartFormData: { (multipartFormData) in
             for (key, value) in params {
                 multipartFormData.append((value as! String).data(using: .utf8, allowLossyConversion: false)!, withName: key)
@@ -75,42 +74,39 @@ class APIManager {
         usingThreshold: UInt64.init(),
         method: type.httpMethod,
         headers: type.headers).response{ response in
-            print(response.response?.statusCode)
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
                 handler(json, nil)
                 break
-                
             case .failure(let error):
-                
                 handler(nil , JSON(error))
                 break
             }
         }
     }
     
-    func uploadPhoto(type: EndPointType, multipart: MultipartFormData, handler: @escaping (JSON?, JSON?)->()) {
-        print("\(type.baseURL) \(type.httpMethod) \(type.url) \(type.encoding) \(type.headers)")
+    func uploadPhoto(type: EndPointType, multipart: MultipartFormData, progress: Bool = false, handler: @escaping (JSON?, JSON?)->()) {
+        
+        if progress {
+            self.showLoader()
+        }
         
         AF.upload(multipartFormData: multipart,to: type.url,
                   usingThreshold: UInt64.init(),
                   method: type.httpMethod,
                   headers: type.headers).responseJSON { response in
-                    print(response.response?.statusCode)
-                    print(JSON(response.response).string)
-                    print(JSON(response.request).string)
-                    print(JSON(response.data).string)
-                    print(response.response?.statusCode)
-                    print(JSON(response.result).string)
+                    
+                    if progress {
+                        self.hideLoader()
+                    }
+                    
                     switch response.result {
                     case .success(let value):
                         let json = JSON(value)
                         handler(json, nil)
                         break
-                        
                     case .failure(let error):
-                        
                         handler(nil , JSON(error))
                         break
                     }

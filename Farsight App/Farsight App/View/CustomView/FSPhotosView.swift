@@ -150,52 +150,55 @@ extension FSPhotosView {
     }
     
     func onSelectedImages() {
-        print("Seleted Images")
+        let downloadGroup = DispatchGroup();
         
-        for item in self.seletedImages {
+        for (idx, item) in self.seletedImages.enumerated() {
             switch item {
             case .photo(let photo):
-//                let param = [
-//                    "evidenceType": "photo",
-//                    "fileExt":"jpeg",
-//                    "fileName":"Test",
-//                    "fileType": "picture",
-//                    "timestamp":"null",
-//                    "gpsAccuracy":"null",
-//                    "gpsLatitude":"null",
-//                    "gpsLongitude":"null",
-//                    "gpsTimestamp":"null",
-//                    "parentUuid":"null",
-//                    "uuid":UUID().uuidString,
-//                    "imageLabel": self.category.id,
-//                    "file": self.convertImageToBase64(image: photo.image)
-//                ] as [String : Any]
+                
+                let fileName = photo.asset?.value(forKey: "filename") as? String
+                let latitude = photo.asset?.location?.coordinate.latitude
+                let longtitude = photo.asset?.location?.coordinate.longitude
+                
+                
+                let param = JSON([
+                    "evidenceType": "photo",
+                    "fileExt":"jpeg",
+                    "fileName":fileName,
+                    "fileType": "picture",
+                    "timestamp":nil,
+                    "gpsAccuracy":nil,
+                    "gpsLatitude":latitude,
+                    "gpsLongitude":longtitude,
+                    "gpsTimestamp":nil,
+                    "parentUuid":nil,
+                    "uuid":UUID().uuidString,
+                    "imageLabel": self.category.id,
+                ])
+                
+                let parsedParams = param.rawString();
                 
                 let multipartFormData = MultipartFormData()
-                multipartFormData.append("photo".data(using: .utf8, allowLossyConversion: false)!, withName: "evidenceType")
-                multipartFormData.append("jpeg".data(using: .utf8, allowLossyConversion: false)!, withName: "fileExt")
-                multipartFormData.append("Test".data(using: .utf8, allowLossyConversion: false)!, withName: "fileName")
-                multipartFormData.append("picture".data(using: .utf8, allowLossyConversion: false)!, withName: "fileType")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "timestamp")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "gpsAccuracy")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "gpsLatitude")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "gpsLongitude")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "gpsTimestamp")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "parentUuid")
-                multipartFormData.append(UUID().uuidString.data(using: .utf8, allowLossyConversion: false)!, withName: "uuid")
-                multipartFormData.append(self.category.id.data(using: .utf8, allowLossyConversion: false)!, withName: "imageLabel")
-                multipartFormData.append(self.convertImageToBase64(image: photo.image)!, withName: "file")
+                multipartFormData.append((parsedParams?.data(using: .utf8, allowLossyConversion: false))!, withName: "payload")
+                multipartFormData.append(self.convertImage(image: photo.image)!, withName: "file", fileName: fileName, mimeType: "image/jpeg")
                 
-                print(multipartFormData)
-                
-                APIManager.shared().uploadPhoto(type: EndpointItem.uploadPhoto((self.workOrderDetail?.won)!), multipart: multipartFormData){(data:JSON?, error) in
+                downloadGroup.enter()
+                APIManager.shared().uploadPhoto(type: EndpointItem.uploadPhoto((self.workOrderDetail?.won)!), multipart: multipartFormData, progress: true){(data:JSON?, error) in
                     print("Ended upload \(data) \(error)")
+                    
+                    if idx == (self.seletedImages.count-1) {
+                        self.onChangedDetail();
+                    }
+                    
+                    downloadGroup.leave()
+                    
                 }
                 break
             case .video(v: _):
                 break
             }
         }
+        
     }
 }
 
@@ -231,11 +234,12 @@ extension FSPhotosView : UICollectionViewDelegateFlowLayout{
         return 15
     }
     
-    func convertImageToBase64(image: UIImage) -> Data? {
+    func convertImage(image: UIImage) -> Data? {
         let imageData: Data? = image.jpegData(compressionQuality: 0.4)
         // let imageData = image.pngData()!
 //        let imageDataURI = imageData!.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
 //        print("Converted image data => \(imageDataURI)")
+
         return imageData
     }
 }
