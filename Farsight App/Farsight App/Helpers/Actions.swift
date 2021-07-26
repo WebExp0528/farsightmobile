@@ -24,6 +24,7 @@ enum ActionItems {
 }
 
 extension ActionItems : ActionType {
+    
     var tag: Int {
         switch self {
         case .BeforePhotos:

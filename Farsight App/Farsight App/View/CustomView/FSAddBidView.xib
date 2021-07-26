@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSAddBidView" customModule="FarSight" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSAddBidView" customModule="Farsight_App" customModuleProvider="target">
             <connections>
                 <outlet property="bidTableView" destination="lND-Wc-EZb" id="W9F-sG-Tdz"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="RhU-bx-NS7"/>
@@ -63,7 +63,7 @@
                             <rect key="frame" x="8" y="443" width="392" height="30"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71p-cZ-WGQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="192" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="392" height="30"/>
                                     <color key="backgroundColor" red="0.15686274510000001" green="0.65490196079999996" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="j0Z-FQ-54i"/>
@@ -80,23 +80,6 @@
                                     </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="onTapAddBidButton:" destination="-1" eventType="touchUpInside" id="OZ9-2S-vdN"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oM-uZ-ie6">
-                                    <rect key="frame" x="200" y="0.0" width="192" height="30"/>
-                                    <color key="backgroundColor" red="0.0" green="0.41176470590000003" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
-                                    <state key="normal" title="Finish and Submit">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="4"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="onTapFinishSubmitButton:" destination="-1" eventType="touchUpInside" id="oR8-JD-ajK"/>
                                     </connections>
                                 </button>
                             </subviews>

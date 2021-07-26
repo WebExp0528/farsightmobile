@@ -96,8 +96,13 @@ class APIManager {
         AF.upload(multipartFormData: multipart,to: type.url,
                   usingThreshold: UInt64.init(),
                   method: type.httpMethod,
-                  headers: type.headers).response{ response in
+                  headers: type.headers).responseJSON { response in
                     print(response.response?.statusCode)
+                    print(JSON(response.response).string)
+                    print(JSON(response.request).string)
+                    print(JSON(response.data).string)
+                    print(response.response?.statusCode)
+                    print(JSON(response.result).string)
                     switch response.result {
                     case .success(let value):
                         let json = JSON(value)

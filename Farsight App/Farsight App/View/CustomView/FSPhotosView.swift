@@ -129,6 +129,7 @@ extension FSPhotosView {
     
     private func onChangedCategory() {
         self.titleLabel.text = "\(self.category.id.capitalized) Photos"
+        self.topView.backgroundColor = self.category.color
     }
     
     private func getAssetThumbnail(asset: PHAsset) -> UIImage? {
@@ -171,18 +172,18 @@ extension FSPhotosView {
 //                ] as [String : Any]
                 
                 let multipartFormData = MultipartFormData()
-                multipartFormData.append("photo".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append("jpeg".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append("Test".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append("picture".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append(UUID().uuidString.data(using: .utf8, allowLossyConversion: false)!, withName: "email")
-                multipartFormData.append(self.category.id.data(using: .utf8, allowLossyConversion: false)!, withName: "email")
+                multipartFormData.append("photo".data(using: .utf8, allowLossyConversion: false)!, withName: "evidenceType")
+                multipartFormData.append("jpeg".data(using: .utf8, allowLossyConversion: false)!, withName: "fileExt")
+                multipartFormData.append("Test".data(using: .utf8, allowLossyConversion: false)!, withName: "fileName")
+                multipartFormData.append("picture".data(using: .utf8, allowLossyConversion: false)!, withName: "fileType")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "timestamp")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "gpsAccuracy")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "gpsLatitude")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "gpsLongitude")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "gpsTimestamp")
+                multipartFormData.append("null".data(using: .utf8, allowLossyConversion: false)!, withName: "parentUuid")
+                multipartFormData.append(UUID().uuidString.data(using: .utf8, allowLossyConversion: false)!, withName: "uuid")
+                multipartFormData.append(self.category.id.data(using: .utf8, allowLossyConversion: false)!, withName: "imageLabel")
                 multipartFormData.append(self.convertImageToBase64(image: photo.image)!, withName: "file")
                 
                 print(multipartFormData)
@@ -219,7 +220,7 @@ extension FSPhotosView : UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 100)
+        return CGSize(width: 100, height: 80)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

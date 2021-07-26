@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="488" height="388"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-pc-fbr">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-pc-fbr">
                     <rect key="frame" x="0.0" y="0.0" width="488" height="388"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlI-qT-TnZ">
@@ -36,7 +36,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="uSo-Ax-uFO" secondAttribute="trailing" constant="8" id="8ge-hb-5yT"/>
                                 <constraint firstItem="uSo-Ax-uFO" firstAttribute="leading" secondItem="tlI-qT-TnZ" secondAttribute="leading" constant="8" id="MMk-2L-ltd"/>
@@ -51,9 +51,17 @@
                             <color key="textColor" systemColor="labelColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="tlI-qT-TnZ" firstAttribute="top" secondItem="Khw-pc-fbr" secondAttribute="top" id="3UH-ti-2qG"/>
                         <constraint firstAttribute="trailing" secondItem="XfV-p9-D1C" secondAttribute="trailing" id="Jft-gu-fd7"/>
@@ -63,6 +71,17 @@
                         <constraint firstAttribute="trailing" secondItem="tlI-qT-TnZ" secondAttribute="trailing" id="to2-in-WPh"/>
                         <constraint firstItem="XfV-p9-D1C" firstAttribute="top" secondItem="tlI-qT-TnZ" secondAttribute="bottom" id="uK2-BN-arz"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

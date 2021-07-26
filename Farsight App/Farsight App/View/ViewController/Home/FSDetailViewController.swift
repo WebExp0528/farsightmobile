@@ -15,6 +15,7 @@ class FSDetailViewController: FSBaseViewController {
     @IBOutlet weak var containerFunctionView: UIView!    
     @IBOutlet weak var actionView: UIView!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var actionMenuButton: UIButton!
     
     
     @IBOutlet weak var woImageView: UIImageView!
@@ -52,6 +53,7 @@ class FSDetailViewController: FSBaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.title = "Detail"
+//        self.actionMenuButton = 
     }
     
     override func viewDidLayoutSubviews() {
@@ -142,14 +144,14 @@ extension FSDetailViewController {
         let leadingConstraint = NSLayoutConstraint(item: subView, attribute: .leading, relatedBy: .equal, toItem: containerFunctionView, attribute: .leading, multiplier: 1, constant: 0)
         let trailingConstraint = NSLayoutConstraint(item: subView, attribute: .trailing, relatedBy: .equal, toItem: containerFunctionView, attribute: .trailing, multiplier: 1, constant: 0)
         let topConstraint = NSLayoutConstraint(item: subView, attribute: .top, relatedBy: .equal, toItem: containerFunctionView, attribute: .top, multiplier: 1, constant: 0)
-        let bottomConstraint = NSLayoutConstraint(item: subView, attribute: .bottom, relatedBy: .equal, toItem: containerFunctionView, attribute: .bottom, multiplier: 1, constant: 0)
+        let bottomConstraint = NSLayoutConstraint(item: subView, attribute: .bottom, relatedBy: .equal, toItem: containerFunctionView, attribute: .bottom, multiplier: 1, constant: -5)
 
         containerFunctionView.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint])
         containerFunctionView.layoutIfNeeded()
     }
     
     private func showActionView(with isShow: Bool) {
-        let bottomSpacing: CGFloat = isShow ? 0 : -170
+        let bottomSpacing: CGFloat = isShow ? 0 : -160
         UIView.animate(withDuration: 0.6) {
             self.bottomConstraint.constant = bottomSpacing
             self.view.layoutIfNeeded()
