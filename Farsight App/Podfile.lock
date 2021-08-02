@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (5.4.3)
+  - FontAwesome.swift (1.9.1)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Kingfisher (6.3.0)
+  - KMPlaceholderTextView (1.4.0)
+  - ObjectMapper (4.2.0)
+  - PryntTrimmerView (4.0.2)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SteviaLayout (4.7.3)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.1)
+  - YPImagePicker (4.5.0):
+    - PryntTrimmerView (~> 4.0.2)
+    - SteviaLayout (~> 4.7.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - FontAwesome.swift
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - KMPlaceholderTextView (~> 1.4.0)
+  - ObjectMapper
+  - SDWebImage
+  - SVProgressHUD
+  - SwiftyJSON
+  - YPImagePicker
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FontAwesome.swift
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - KMPlaceholderTextView
+    - ObjectMapper
+    - PryntTrimmerView
+    - SDWebImage
+    - SteviaLayout
+    - SVProgressHUD
+    - SwiftyJSON
+    - YPImagePicker
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
+
+PODFILE CHECKSUM: df55afb05694a29e52cf799fc9cfcbbc9d75e38a
+
+COCOAPODS: 1.10.1
